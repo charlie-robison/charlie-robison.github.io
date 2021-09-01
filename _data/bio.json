@@ -1,15 +1,15 @@
 {
   "basics": {
-    "name": "Molly Maluhia",
+    "name": "Charlie Robison",
     "label": "Student",
-    "picture": "https://techfolios.github.io/template/images/molly.png",
-    "email": "molly@hawaii.edu",
-    "phone": "808-333-4444",
-    "website": "https://mmaluhia.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2020.",
+    "picture": "https://charlie-robison.github.io/images/IMG_3158.JPG",
+    "email": "cprobiso@hawaii.edu",
+    "phone": "808-352-0499",
+    "website": "https://charlie-robison.github.io",
+    "summary": "I am a student studying Computer Science at UH Manoa. I love creating software and I am very passionate about Computer Science! I plan on graduating in 2024.",
     "location": {
       "address": "",
-      "postalCode": "96822",
+      "postalCode": "",
       "city": "Honolulu",
       "countryCode": "USA",
       "region": "Hawaii"
@@ -17,42 +17,41 @@
     "profiles": [
       {
         "network": "github",
-        "username": "mmaluhia",
-        "url": "http://github.com/changeme"
+        "username": "charlie-robison",
+        "url": "http://github.com/charlie-robison"
       },
       {
         "network": "linkedin",
-        "username": "mollymaluhia",
-        "url": "http://linkedin.com/in/changeme"
-      },
-      {
-        "network": "twitter",
-        "username": "mollymal",
-        "url": "http://twitter.com/changeme"
-      },
-      {
-        "network": "instagram",
-        "username": "molly",
-        "url": "http://instagram.com/changeme"
+        "username": "charlie-robison-32540021b",
+        "url": "http://linkedin.com/in/charlie-robison-32540021b"
       }
     ]
   },
   "interests": [
     {
-      "name": "internet of things",
-      "keywords": [
-        "Arduino",
-        "TI MSP430"
-      ]
-    },
-    {
-      "name": "data mining",
+      "name": "software engineering",
       "keywords": [
       ]
     },
     {
-      "name": "artificial intelligence",
+      "name": "ios development",
       "keywords": [
+        "e-commerce applications",
+        "social media applications"
+      ]
+    },
+    {
+      "name": "web development",
+      "keywords": [
+        "e-commerce websites",
+        "custom websites",
+        "web api"
+      ]
+    },
+    {
+      "name": "game development",
+      "keywords": [
+        "ios games"
       ]
     }
   ],
