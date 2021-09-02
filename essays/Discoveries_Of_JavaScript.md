@@ -8,8 +8,8 @@ labels:
   - Javascript
   - Learning
 ---
-## Creative Thinking With Javascript
-Discovering new tools will almost always lead to a spike in creativity and the development of new ideas. This is how I feel about learning Javascript. I have some prior experience with Javascript, however while studying it I have made many new discoveries on the language itself and formed new creative ideas and possibilities in programming and software engineering. 
+## Initial Thoughts On Javascript
+Discovering new tools will almost always lead to a spike in creativity and the development of new ideas. This is how I feel about learning Javascript. I have some prior experience with Javascript, however, while studying it I have made many new discoveries on the language itself and formed new creative ideas and possibilities in programming and software engineering. 
 
 ## Biggest Discoveries
 
@@ -18,19 +18,22 @@ The biggest discovery I found while studying Javascript was the relationship bet
 ### Example of JSON and Javascript Object Similarities
 
 #### JSON:
+```
 ‘{
     “Name”: “Charlie”,
     “Age”: 20,
     “School”: UHM
 }’
+```
 
 #### Javascript Object:
-
+```
 {
    Name: “Charlie”,
    Age: 20,
    School: UHM
 }
+```
 
 Something else that I learned while learning Javascript is the ability to assign functions to variables, assign functions to functions, return functions, and the promise object. I found this to be very interesting and a brand new concept to me. The applications of this are very large and I feel like I have already discovered ways where I can apply this. An example of a way I can use these would be a completion handler, which is a function that stalls until data from a database has been fully loaded and then executes code depending on the state of the load. I dealt with completion handlers a lot when making iOS apps and I found that the promise object and the widespread capability of functions in Javascript can accomplish this task easily when trying to receive data and display it on a website. Since a promise includes a resolve and reject parameter, I can use these parameters to help steer when data has been fully loaded or not. This opens up a brand new path of thinking when dealing with programming and software engineering.
 
@@ -38,6 +41,7 @@ Something else that I learned while learning Javascript is the ability to assign
 
 Throughout my continued learning of Javascript I go through the process of athletic software engineering which has the primary goal of not only refining programming skills but also practicing solving problems which would be used in a software engineering setting. This includes a “Workout of the Day” (WOD) given once a week with several practice WODs to help prepare for the actual WOD. Currently I have not gotten to my first WOD but I have done several practice WODs. My first thoughts of the practice WODs was that this is very stressful. But to be honest, I also enjoy them because it's a challenge in solving a problem. Personally I am a very competitive person who wants to solve problems to satisfy myself. This does not sound like the goal of the WODs but my main goal to take away from this is to improve my software engineering and programming skills. The WODs get me excited because it gives me a chance to see if I am able to keep up with these problems at a high standard and also teaches me how to solve problems on the spot. With that said, I am a big fan of the WODs and feel like it will work for me going forward. Here is an example of one of the practice WODs I did in my class which converts the temperature given to the temperature type given: 
 
+```
 function temperatureConverter(temperature, temperatureType) {
   if (temperatureType === "F") {
     return (temperature - 32) * 5/9;
@@ -51,6 +55,7 @@ function temperatureConverter(temperature, temperatureType) {
 console.log(temperatureConverter(212, "F"));     // 100
 console.log(temperatureConverter(0, "C"));       // 32
 console.log(temperatureConverter(0, "X"));       // Illegal temperature type
+```
 
 ## Final Thoughts
 
