@@ -9,6 +9,8 @@ labels:
   - Learning
 ---
 
+## Why Software Engineering is For Me
+
 Throughout my life so far I have always found joy in creating things. Once I learned about programming and computer science in high school, I grew a passion for creating software for fun ranging from video games to iOS applications. This is why I decided to take ICS 314, Introduction to Software Engineering. I know this class will be one of those special classes that will impact my life because it will teach me how to develop software in a professional setting. 
 
 ## Main Interests In Software Engineering
