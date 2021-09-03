@@ -69,14 +69,13 @@
       ]
     },
     {
-      "name": "Toolsets/OS",
+      "name": "Programming Tools",
       "level": "",
       "keywords": [
-        "MacOS",
-        "Ubuntu",
-        "Git/GitHub",
-        "g++",
-        "TI LaunchPad"
+        "Xcode",
+        "DJango",
+        "Terminal",
+        "VSCode"
       ]
     }
   ],
@@ -115,13 +114,22 @@
         "Math 2B: Calculus 2",
         "Physics 2: Intro To Math Methods",
         "Physics 7C: Classical Physics",
-        "Physics 7LC: Classical Physics Lab,
+        "Physics 7LC: Classical Physics Lab",
         "Writing 39B: Critical Reading and Rhetoric",
         "Anthropology 2A: Intro To Socialcutural Anthropology"
       ]
     }
   ],
   "work": [
+      "company": "Bloomingdales",
+      "position": "Sales Person",
+      "website": "https://www.bloomingdales.com/",
+      "startDate": "2020-10-20",
+      "endDate": "Present",
+      "summary": "Selling merchandise to customers as well as using the cash register.",
+      "highlights": [
+        "Part-Time Salesman, 2021-Present",
+        "Part-Time Conceirge, 2020-2021"
   ],
   "volunteer": [
   ],
