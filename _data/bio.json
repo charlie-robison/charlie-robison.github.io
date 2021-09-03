@@ -60,12 +60,12 @@
       "name": "Languages and Frameworks",
       "level": "",
       "keywords": [
-        "C",
-        "C++",
         "Java",
+        "Swift",
+        "Python",
         "Javascript",
-        "Assembly",
-        "Common Lisp"
+        "Html",
+        "CSS"
       ]
     },
     {
@@ -83,12 +83,24 @@
   "education": [
     {
       "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
+      "area": "Computer Science (expected Spring, 2024)",
       "studyType": "B.S.",
-      "startDate": "2013-09-01",
+      "startDate": "2020-08-24",
       "endDate": "Present",
-      "gpa": "",
+      "gpa": "3.87",
       "courses": [
+        "ICS 111: Intro To Programming",
+        "ICS 211: Data Structures",
+        "ICS 311: Algorithms",
+        "ICS 141: Discrete Math I",
+        "ICS 241: Discrete Math II",
+        "ICS 314: Software Engineering",
+        "Physics 151: College Physics",
+        "Math 307: Linear Algebra",
+        "Econ 130: Principles of Microeconomics",
+        "Music 108:  Fundamentals of Music",
+        "GEO 151: Geog & Contemporary Society",
+        "COM 201: Introduction to Communication"
       ]
     }
   ],
