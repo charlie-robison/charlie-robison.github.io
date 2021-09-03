@@ -29,7 +29,9 @@ I created the frontend of this app using Xcode with the swift programming langua
 
 Throughout this experience I learned DJango which taught me about the model-view way of making post, and get requests with the database. I also learned about serializers, which converted data from the database to JSON and vice-a-versa. I also learned a lot about UI in the frontend of the app. I learned how to connect UI to the code so that the app was functional such as inserting user info or making a post on their account. My final take away of this project is that it taught me how to develop large full-stack apps and how to integrate a backend and a frontend together. 
 
-### Source Code[RapCollab.zip](https://github.com/charlie-robison/charlie-robison.github.io/files/7104581/RapCollab.zip)
+### Source Code
+
+[RapCollab.zip](https://github.com/charlie-robison/charlie-robison.github.io/files/7104581/RapCollab.zip)
 
 
 
