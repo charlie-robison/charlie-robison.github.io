@@ -137,6 +137,34 @@
   "volunteer": [
   ],
   "awards": [
+    {
+      "type": "award",
+      "title": "Deans List",
+      "date": "December 2019",
+      "awarder": "University of California Irvine School of Physical Science",
+      "summary": ""
+    },
+    {
+      "type": "award",
+      "title": "Deans List",
+      "date": "March 2020",
+      "awarder": "University of California Irvine School of Physical Science",
+      "summary": ""
+    },
+    {
+      "type": "award",
+      "title": "Deans List",
+      "date": "December 2020",
+      "awarder": "University of Hawaii Manoa",
+      "summary": ""
+    },
+    {
+      "type": "award",
+      "title": "Deans List",
+      "date": "June 2021",
+      "awarder": "University of Hawaii Manoa",
+      "summary": ""
+    }
   ],
   "references": [
     {
