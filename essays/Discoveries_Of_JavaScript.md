@@ -9,6 +9,7 @@ labels:
   - Learning
 ---
 ## Initial Thoughts On Javascript
+
 Discovering new tools will almost always lead to a spike in creativity and the development of new ideas. This is how I feel about learning Javascript. I have some prior experience with Javascript, however, while studying it I have made many discoveries on the language itself and formed new creative ideas and possibilities in programming and software engineering. 
 
 ## Biggest Discoveries
