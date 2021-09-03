@@ -27,10 +27,8 @@ This project was an individual project to test my skills in Java. With that said
 
 Throughout this process I also learned a little about basic AI. The opponent the user plays against is not a real person. I programmed the opponent to check where the player inserted their symbols and then randomly selected to place their symbol in a slot that the player did not select. This is basic AI, but I really started to understand where I can build from this and how I can use AI in computer games. In all, this project has taught me many new concepts in Java and the use of basic AI in computer games.
 
-### Source Code:
+### Source Code
 
-Main File
-JFrame File
-
+[Inverse_Tik_Tak_Toe_Source_Code.zip](https://github.com/charlie-robison/charlie-robison.github.io/files/7104551/Inverse_Tik_Tak_Toe_Source_Code.zip)
 
 
