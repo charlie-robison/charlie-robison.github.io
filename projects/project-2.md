@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/RapCollab.png
+image: images/RapCollabIcon2.png
 title: Rap Collab iOS Application
 permalink: projects/rapCollab
 # All dates must be YYYY-MM-DD format!
