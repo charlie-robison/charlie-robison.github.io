@@ -15,7 +15,11 @@ summary: In my ICS 111 class I developed a computer game using Java called Inver
 
 <img class="ui medium right floated rounded image" src="/images/Inverse_Tik_Tak_Toe.png">
 
-In my ICS 111 class (Introduction to Programming) I developed a small computer game named "Inverse Tik Tak Toe". The objective of the game is the opposite of normal TiK Tak Toe. In order to win the game, the opponent must get three symbols in a row before you do. I used the Java programming language to develop this and learned a lot about Java programming graphics such as JFrames. Throughout this process I also learned a little about basic AI. The opponent the user plays against is not a real person. I programmed the opponent to check where the player inserted their symbols and then randomly selected to place their symbol in a slot that the player did not select. This is basic AI, but I really started to understand where I can build from this and how I can use AI in computer games. In all, this project has taught me many new concepts in Java and the use of basic AI in computer games.
+In my ICS 111 class (Introduction to Programming) I developed a small computer game named "Inverse Tik Tak Toe". The objective of the game is the opposite of normal TiK Tak Toe. In order to win the game, the opponent must get three symbols in a row before you do. The goal of the project was to learn more about the Java language and also learn more about using graphics in Java.
+
+This project was an individual project to test my skills in Java. With that said, I had to take on this project all by myself and I have never took on a programmibg project this big up to this point. The key for me was to stay organized with my code and keep Java coding standards so that my code was easy to read whenever I took a break from programming.
+
+Throughout this process I also learned a little about basic AI. The opponent the user plays against is not a real person. I programmed the opponent to check where the player inserted their symbols and then randomly selected to place their symbol in a slot that the player did not select. This is basic AI, but I really started to understand where I can build from this and how I can use AI in computer games. In all, this project has taught me many new concepts in Java and the use of basic AI in computer games.
 
 
 
