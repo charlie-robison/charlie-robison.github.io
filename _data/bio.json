@@ -121,6 +121,7 @@
     }
   ],
   "work": [
+    {
       "company": "Bloomingdales",
       "position": "Sales Person",
       "website": "https://www.bloomingdales.com/",
@@ -130,6 +131,8 @@
       "highlights": [
         "Part-Time Salesman, 2021-Present",
         "Part-Time Conceirge, 2020-2021"
+      ]
+    }
   ],
   "volunteer": [
   ],
