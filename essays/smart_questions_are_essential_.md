@@ -29,7 +29,9 @@ There were many responses to this question with a total of 36 responses. The mos
 ### “Not Smart” Question Example
 
 The second example I found was a question asked about databases in a WordPress website. It seemed they were not able to get their database working properly. After reading this question, I found that it was a “not smart” question. The main problem with this question is that it is very hard to understand due to all of the grammatical errors. Nothing is indicating in the question that this author’s first language is not English so it can be assumed that the author of the question had poor grammar. Another problem is that the question does not explicitly tell the responder how to respond. The last sentence of the question, “Please help me to fix the problem” is not even a question. It is more of a command and is open-ended. With that said, the author of the question comes off as lazy and asks the responder to fix their problem rather than provide a piece of insight towards the correct direction to fix the problem. Also, since the question is open-ended, the responder doesn’t have a good way to respond to this question since they would have to guess what the actual problem is. The person also did not add that they tried to search for this on the web which definitely could have been a possibility since it seems like something the WordPress documentation may have an answer to.
-Response to “Not Smart” Question
+
+### Response to “Not Smart” Question
+
 It seems that the response to this question was very minimal. There was no official response to the problem, only a comment which tried to answer the question despite the vagueness. It appears that there were no responses that solved the problem since nothing was marked as FIXED. With that said, the lack of an answer to this question is directly related to the fact that the question was poorly formed and did not provide the necessary question structure and information to get a well-qualified response. This demonstrates that the quality of a question impacts the quality of the response received.
 
 ## Final Thoughts on “Smart” Questions
