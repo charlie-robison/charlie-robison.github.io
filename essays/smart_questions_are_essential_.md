@@ -20,6 +20,29 @@ To learn more about how formulating a question the “smart way” and learning 
 
 ### “Smart” Question Example
 
+`
+I noticed that JavaScript's new Date() function is very smart in accepting dates in several formats.
+
+Xmas95 = new Date("25 Dec, 1995 23:15:00")
+Xmas95 = new Date("2009 06 12,12:52:39")
+Xmas95 = new Date("20 09 2006,12:52:39")
+I could not find documentation anywhere showing all the valid string formats while calling new Date() function.
+
+This is for converting a string to a date. If we look at the opposite side, that is, converting a date object to a string, until now I was under the impression that JavaScript doesn't have a built-in API to format a date object into a string.
+
+Editor's note: The following approach is the asker's attempt that worked on a particular browser but does not work in general; see the answers on this page to see some actual solutions.
+
+Today, I played with the toString() method on the date object and surprisingly it serves the purpose of formatting date to strings.
+
+var d1 = new Date();
+d1.toString('yyyy-MM-dd');       //Returns "2009-06-29" in Internet Explorer, but not Firefox or Chrome
+d1.toString('dddd, MMMM ,yyyy')  //Returns "Monday, June 29,2009" in Internet Explorer, but not Firefox or Chrome
+Also here I couldn't find any documentation on all the ways we can format the date object into a string.
+
+Where is the documentation which lists the format specifiers supported by the Date() object?
+
+`
+
 The first example I found was a question about where to find information on valid string formats when calling the new Date() function in Javascript. After reading the question, I found this to be a good question because the author of the question has provided background information on the problem they had, which was mentioned what the new Date() function was in Javascript. They then added the problem they were having, which was that they could not find the valid string formats when calling this function. So far the question is very precise and informative and it is clear the author of the question has done their research. What makes this question effective is that they then decided to show their attempts to solve the problem and mention that they could not find anything online to help solve their problem. This way it shows the effort put in to solve the problem and that they researched in other places first to find a solution. Lastly, the question doesn’t end on an open note or as a command to display the answer, rather it asks for a direction to point them in to solve their problem, “...I couldn't find any documentation on all the ways we can format the date object into a string. Where is the documentation which lists the format specifiers supported by the Date() object?”. This is the last line of the question and asks the forum for a resource so that they could solve the problem rather than demand an answer. The author of the question also provides their code in correct formatting so that the responder can test the code if needed. With all these things kept in mind, the question is effective because it is precise, informative, explicit, and is structured nicely. 
 
 ### Response to “Smart” Question
