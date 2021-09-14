@@ -21,7 +21,7 @@ In my ICS 111 class (Introduction to Programming) I developed a small computer g
 
 ### My Involvement
 
-This project was an individual project to test my skills in Java. With that said, I had to take on this project all by myself and I have never took on a programmibg project this big up to this point. The key for me was to stay organized with my code and keep Java coding standards so that my code was easy to read whenever I took a break from programming.
+This project was an individual project to test my skills in Java. With that said, I had to take on this project all by myself and I have never took on a programming project this big up to this point. The key for me was to stay organized with my code and keep Java coding standards so that my code was easy to read whenever I took a break from programming. By doing this, it was easier for me to know where everything was and make programming more efficient.
 
 ### What I Learned
 
