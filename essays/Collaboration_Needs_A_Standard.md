@@ -24,7 +24,7 @@ Even though I used Checkstyle in my Introduction to Programming course, I did no
 
 Understanding basic coding standards not only will help in development but also will help when asking questions or searching for questions on the internet or a forum. Since there is a coding standard for every programming language, finding an answer to a question relating to programming will be much easier to understand if you understand the coding standard. Now, this is only true if the answer is written in the correct coding standard. This, however, continues to prove my point on its effectiveness. If all programmers use the correct coding standard for each language, the format of a program will be much easier to read to everyone instead of trying to decode what the programmer means by what they wrote or how they organized it. As an example look at the two different code blocks below. Both code blocks do that same thing. The first code block does not follow the Javascript Coding Standard and the second code block does. 
 
-###Example 1: Code Does Not Follow Coding Standard
+### Example 1: Code Does Not Follow Coding Standard
 ```
 function AddNumToList(list, num) {
         var newList = _.map(list,(element)=>element+num);
@@ -37,7 +37,7 @@ var list = [1,2,3,4,5];
 console.log(AddNumToList(list));
 ```
 
-###Example 2: Code Does Follow Coding Standard
+### Example 2: Code Does Follow Coding Standard
 ```
 const list = [1, 2, 3, 4, 5];
 
