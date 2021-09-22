@@ -1,8 +1,8 @@
 ---
 layout: essay
 type: essay
-title: Discoveries of Javascript
-date: 2021-09-01
+title: Collaboration Needs A Standard
+date: 2021-09-22
 labels:
 - Software Engineering
 - Coding Standards
