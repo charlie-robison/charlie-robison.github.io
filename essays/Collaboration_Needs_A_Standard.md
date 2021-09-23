@@ -14,7 +14,7 @@ Great software is developed when collaboration between members is effective. Wit
 
 ## Thoughts on Coding Standards
 
-At first, I was not a fan of coding standards. Back when I was learning Java in my Introduction to Programming course, we used Checkstyle as a tool to monitor the Java coding standard. My first thoughts on this were that it slowed my productivity and actually took away significant time to solving the programming problem. With that said, I have changed my mind about coding standards. Over the summer when I started on some personal software projects of mine I noticed that if my code is not following the coding standard, then in the future when I work with others, how would they be able to interpret what I'm programming quickly so that they can programming their part efficiently. This is where I started having more respect for coding standards because I now know if there is a standard to the way I write my code, then collaboration will be much more effective.
+At first, I was not a fan of coding standards. Back when I was learning Java in my Introduction to Programming course, we used Checkstyle as a tool to monitor the Java coding standard. My first thoughts on this were that it slowed my productivity and took away significant time to solving the programming problem. With that said, I have changed my mind about coding standards. Over the summer when I started on some personal software projects of mine I noticed that if my code is not following the coding standard, then in the future when I work with others, how would they be able to interpret what I'm programming. This is where I started having more respect for coding standards because I now know if there is a standard to the way I write my code, then collaboration will be much more effective.
 
 ## Thoughts on Using ESLint 
 
@@ -50,7 +50,7 @@ console.log(addNumToList(list));
 
 ```
 
-As you can see the second code block is much more organized and can be read by any programmer that understands the standard. The first code block is very disorganized and is very difficult to understand immediately by a programmer since they have no knowledge on how this programmer writes their code.
+As you can see the first code block is very disorganized and is very difficult to understand immediately by a programmer since they do not know about how this programmer writes their code. The first code block has poor indentation which makes it hard to tell which code is inside the function, incorrect capitalization which readers could mistaken the function for a class from first glance, and the variable is not declared in away which tells the reader whether it can be mutated or not. These small caveats can make the understanding of a program more difficult and will make development inefficient due to the time needed to read the code. The second code block is much more organized and can be read by any programmer that understands the standard. There are appropriate spaces, a specific way of declaring a variable, and correct indentation. With these used in the code, anyone who is reading it will understand what code is inside the function, can see code due to correct spacing, and would understand that list, and newList are not supposed to be mutated since they are used with the variable declaration const. The second code block demonstrates how much easier it is the read and understand without making an extra effort.
 
 ## Final Thoughts on Coding Standards as a Tool
 
