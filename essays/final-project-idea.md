@@ -30,10 +30,22 @@ The data submitted will be placed in a MongoDB collection which can be accessed 
 The user’s overall information about their schedule, career path, goals, recommendations, and semester difficulty will be displayed here. This can be viewed as the main page of the web app. Our mockup design of this includes a grid container which contains UI segments which represent a semester for the user. Each segment holds all the classes the user is taking that semester and also shows overall difficulty for that semester at the top of the segment. There is a search bar somewhere at the top which allows the user to search for a specific semester information. The user also can add their overall goal at the top and contain filters at the top for the user to customize their queries.
 #### Data
 The data loaded to the page are all of the user’s scheduling data such as classes chosen for a semester. The data from each semester's schedule will be stored in a collection called SemesterCollection which one object represents the classes chosen for a semester. All of the entries in the SemesterCollection are all classes over all semesters. Each entry contains all classes the user is taking in a semester, the difficulty level, and towards what goal it is satisfying.
+### Information Page
+#### UI
+This page will display all information about ICS classes including their name, difficulty, and description. The UI included will be a one column grid container where each class is represented in a segment. There is a header at the top of each segment which contains the class name. A description of the class is underneath this header. Finally, at the bottom of the segment is small text indicating the overall difficulty level of the class. 
+#### Data
+The data included in this page is a collection holding all the class information. We will call this collection ClassCollection which contains the name, description, and difficulty level. This data will be loaded whenever the page is navigated to.
+### Account Page
+### UI
+This page allows the user to update their account information. The UI included is a form including inputs holding all account information for a user. The user can input their data in here and press update to update their info. They can delete their account by pressing the delete account button on the bottom.
+#### Data
+The data loaded here is all the user’s account information. Updates to the entries will need to be possible as the user updates their account information. Deletion of entries must be possible as well since the user may delete their account.
 
+## Use Case Ideas
+New students could use this web application to help them establish an initial schedule and help them get orientated with classes. Students further along in their career path could use it to get recommendations and advice from more senior ICS students. Professors could use it to test interest level in a particular class, or to get feedback from what students liked or did not like about a class. 
 
- 
-
+## Beyond the basics
+While recommendations based on career goals and previous classes are certainly helpful, students may want to see what paths other students have taken in the past. An additional feature in the web application would be able to take a look at previous students and what classes they took in what order, then provide recommendations based on that data. Another beyond the basics element that this app will have is the computation of difficulty level for a semester which will be computed as a rank (a finite integer from 1 to 5 where 5 is extremely difficult). This will involve knowledge outside of this class with combination with knowledge obtained from this class to make this possible. Perhaps one more idea would be to include a daily poll of some kind, so that professors could get suggestions on upcoming classes, as well as encourage student engagement.
 
 
 
