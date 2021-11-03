@@ -14,7 +14,7 @@ Written collaboratively by: Charlie Robison, Anat Amar, Alexander Jones, Braydon
 ### The Problem
 A problem many of us ICS students face is to plan a successful long term schedule of classes which fit our goals and career paths for the future. We also find it difficult to gauge the overall difficulty of a semester based on the classes chosen. With all of these different factors and unknowns in play, it can become very difficult to come up with a good long term schedule for ICS.
 
-###The Solution
+### The Solution
 Our solution is to come up with a web application that will allow ICS students at UH to login, choose their career path and goals and then have a list of classes in order that are recommended. Semesters also show overall level of difficulty based on the ICS classes chosen based on previous average grade levels for that class. This solution will offer students more clarity on what they should choose by providing them information about what skills they will obtain from the classes needed for their goal and will know the difficulty of a semester which will make planning easier for them.
 
 
