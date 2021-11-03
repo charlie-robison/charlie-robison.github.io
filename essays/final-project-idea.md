@@ -10,7 +10,7 @@ labels:
 
 Written collaboratively by: Charlie Robison, Anat Amar, Alexander Jones, Braydon Nagasako
 
-## A Need For Organization
+## ICS Advanced Schedule Planner
 ### The Problem
 A problem many of us ICS students face is to plan a successful long term schedule of classes which fit our goals and career paths for the future. We also find it difficult to gauge the overall difficulty of a semester based on the classes chosen. With all of these different factors and unknowns in play, it can become very difficult to come up with a good long term schedule for ICS.
 
