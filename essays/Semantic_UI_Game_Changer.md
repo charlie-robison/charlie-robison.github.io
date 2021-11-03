@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: Semantic UI, The Game Changer
+title: Semantic UI, The Game-Changer
 date: 2021-10-06
 labels:
 - Software Engineering
@@ -23,10 +23,10 @@ When I first was learning Semantic UI, I felt overwhelmed with a lot of the cont
 Yes, Semantic UI is frustrating to learn at first, the benefits of learning it outweighs the cost of frustration. Using plain HTML and CSS is not only long and tedious to develop web pages but it's also very hard to get UI on a webpage to look nice. Semantic UI automatically makes UI nice just with the default classes. Of course, you might want to adjust some of the defaults to make the UI more customized and nicer, but the point is, you can focus more on customizing nice-looking UI rather than pounding your head on a desk trying to make the UI decent. Here is a comparison of a Semantic UI webpage vs a plain HTML and CSS webpage which both contain the same HTML elements.
 
 ### Plain HTML/CSS Webpage
-<img class="ui medium right floated rounded image" src="/images/HTML:CSS_Webpage.png">
+<img class="ui medium rounded image" src="/images/HTML:CSS_Webpage.png">
 
 ### Semantic UI Webpage
-<img class="ui medium right floated rounded image" src="/images/Semantic_UI_Webpage.png">
+<img class="ui medium rounded image" src="/images/Semantic_UI_Webpage.png">
 
 
 As you can see, the Semantic UI version of this webpage is cleaner and more visually appealing than the plain HTML and CSS version. Also, you can see that the effort put in in the Semantic UI version is much less than the plain HTML/CSS version. This can be demonstrated below by looking at the HTML and CSS of the top menu bar for both versions of the page.
