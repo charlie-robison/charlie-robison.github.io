@@ -14,3 +14,77 @@ During the development of an application, software engineers want their developm
 
 ## Design Patterns Thought of as a Physics Formula
 Solving problems in physics is a good metaphor for viewing what design patterns are in software engineering. In the study of physics, there are many complicated problems that seem completely different and unique from one another. To help solve these problems the similarities of some problems are found between them and a general method or formula is used to solve these problems with adjustments to the solution based on the specifics of the problem. A good example would be a problem involving finding how long it would take a ball to hit the ground after being thrown up and a problem involving how long it would take a rocket to travel upward 500 meters. To someone who is not in physics, these two problems seem to be very different from each other and would be difficult to solve from scratch since they would not know the method of finding the solution. Well in case you didn't know, these two problems are more similar than you think. They are both called kinematic problems in the physics world and both can be found using a similar method which is solve for the time variable in the kinematic formulas given input variables. The formulas given can be thought of as design patterns while the inputs and interpretation of the answer can be thought of the adjustments made to finish the solution. With this, the same formula can be used to solve both problems. This is what a design pattern does in software engineering. Of course if you choose the wrong formula for a problem in physics, the solution will not be found, and the work will be wasted. This is the same as a design pattern, if the wrong design pattern is chosen, the code will be wasted and the solution will either be faulty or not solved. With that said, design patterns are great for being a general solution to problems but need to be chosen carefully and need to be adjusted based on the specifics of the problem for the solution to be effective.
+
+## The Clever Use of Design Patterns
+Throughout my studying of software engineering so far, I have come across a variety of problems that needed to be solved that has similarities to them. Specifically an example of one of these problems was for a website I was making with a team that involved messaging. The problem was I wanted the message system to allow users to view their messages on the website, reply to these messages, and have the replied messages be received in real time to the recipient user. I found after studying the basics of design patterns, that I used the Model-View-Controller design pattern which in an overview, has a model containg data from the database which updates the user interface or view which the user sees. The user is then able to control what is on the screen which manipulates the model (or data) and restarts the cycle. In this example, the website my team and I were building used Meteor and Mongo DB as the database of the application. In this case, the model would be a MongoDB collection called MessageCollection which contains all messages sent on the website. The view would display all the messages from the model (or MessageCollection) sent to the user. The messages shown on the view have a reply field on form which can be written by the user and sent using a button. This is the controller part of the Model-View-Controller design pattern in this case. The sent message is then added to MessageCollection which in turn manipulates the model. Here is a few examples of the code displaying how the Model-View-Controller solves this problem: 
+
+### Model
+The code below shows how the MessageCollection is created and accepts documents that contain a sender, receiver, an image, and a message. Line 6 displays how this collection is added to the MongoDB database and acts as the model of this problem.
+```javascript
+class MessageCollection {
+  constructor() {
+    // The name of this collection.
+    this.name = 'MessageCollection';
+    // Define the Mongo collection.
+    this.collection = new Mongo.Collection(this.name);
+    // Define the structure of each document in the collection.
+    this.schema = new SimpleSchema({
+      sender: String,
+      receiver: String,
+      image: String,
+      message: String,
+    }, { tracker: Tracker });
+    // Attach the schema to the collection, so all attempts to insert a document are checked against schema.
+    this.collection.attachSchema(this.schema);
+    // Define names for publications and subscriptions
+    this.userPublicationName = `${this.name}.publication.user`;
+    this.adminPublicationName = `${this.name}.publication.admin`;
+  }
+}
+```
+### View
+The code below shows how the messages from MessageCollection is displayed on the screen using React and Semantic UI to display the UI nicely on the screen for the user. Line 3 shows how the messages received will be displayed on the screen for the user. This is an example of a view where the model updates the view whenever there is a new message.
+```javascript
+<Segment>
+  {/* Code above excluded from example due to irrelvance. */}
+  <p>{this.props.message.message}</p>
+  <Accordion>
+    <Accordion.Title
+      active={activeIndex === 0}
+      index={0}
+      onClick={this.handleClick} >
+      Reply To Message
+    </Accordion.Title>
+    <Accordion.Content active={activeIndex === 0} >
+      {/* Creates SendMessage component with the receiver of the message being the sender of the last message (reply). */}
+      <SendMessage key={this.props.message._id} receiver={this.props.message.sender} messageType={'Reply'}/>
+    </Accordion.Content>
+  </Accordion>
+</Segment>
+```
+
+### Controller
+The above code in line 13 uses a React component called SendMessage, this component can be shown in the code below. This component allows the user to reply to the message sent to them through a form. You can see in the submit function below (which executes when the user submits the form) the at the message sent is added to MessageCollection in line 8. This shows how the user uses the form the manipulate the model. This acts as the controller in our example.
+```javascript
+class SendMessage extends React.Component {
+
+  // On submit, insert the data.
+  submit(data, formRef) {
+    const { message } = data;
+    const owner = Meteor.user().username;
+    // Inserts a new Message document with the specified receiver and sender.
+    Messages.collection.insert({
+      sender: owner, receiver: this.props.receiver,
+      image: 'https://images.unsplash.com/photo-1502680390469-be75c86b636f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3VyZmluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80', message: message
+    }, (error) => {
+      if (error) {
+        swal('Error', error.message, 'error');
+      } else {
+        swal('Success', `${this.props.messageType} Sent to ${this.props.receiver}!`, 'success');
+        formRef.reset();
+      }
+    });
+  }
+  /* Code excluded from example due to irrelvance. */
+}
+```
