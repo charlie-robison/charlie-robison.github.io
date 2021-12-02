@@ -60,18 +60,23 @@
       "name": "Languages and Frameworks",
       "level": "",
       "keywords": [
-        "Java",
-        "Swift",
-        "Python",
         "Javascript",
         "Html",
-        "CSS"
+        "CSS",
+        "React",
+        "Semantic UI",
+        "Meteor",
+        "Python",
+        "Java",
+        "Swift"
       ]
     },
     {
       "name": "Programming Tools",
       "level": "",
       "keywords": [
+        "IntelliJ IDEA",
+        "Github",
         "Xcode",
         "DJango",
         "Terminal",
