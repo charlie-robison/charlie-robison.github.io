@@ -16,7 +16,7 @@ labels:
   summary: Surf Connect is a website my team and I developed to connect surfers in the University of Hawaii community regardless of their skill level together. Surf Connect allows the user to pick a surfing ability and time they would like to surf and the app will give the user suggestions of users that match their surfing ability and time. The application also gives real-time surf forecast information for surf locations. My team and I used Github to work collaboratively on the project and followed the guidelines of Issue Driven Project Management.
 ---
 
-<img class="ui medium right floated rounded image" src="/images/iOS_RPG.png">
+<img class="ui medium right floated rounded image" src="/images/surf-connect-landing-page.jpg">
 
 ### What This Project Is About
 
