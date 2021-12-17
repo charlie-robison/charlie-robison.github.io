@@ -24,7 +24,30 @@ Surf Connect was developed as a final project web application for my Introductio
 
 ### My Involvement
 
-My part of this project was to build the actual gameplay of the game. My friend and I would brainstorm what the game would be like and then worked invidually on our own seperate parts the project. Once the basic gameplay mechanics were complete, my friend sent over all of the sprites for the game which I then imported into the project and creating the animations using arrays. The communication between my friend and I had to be very clear because my friend had top understand that certain artistic shapes would make the gameplay difficult. With that said, I learned a lot about working with someone on a software project.
+My part of this project focused developing the frontend and backend of the Connect Page and Suggestions Page on the website. I also was in charge of developing the entire messaging system on the Connect Page and also developing the real-time surf forecast for the Forecasts Page. To get started I drew sketches of what I wanted the Connect and Suggestions Page to like. After discussing with the team on the designs I started working on the user interface by using React and Semantic UI frameworks. After I got what I wanted the pages to look like, I started working on the messaging system. What I had to do at first was created a Mongo DB database collection called MessageCollection. Whenever a user wrote a message, the message would be inserted into this collection. Messages would be viewed on the Connect Page in a box called Messages which is fixed to the screen and when opened all messages would appear. The user would be able to scroll through the messages and are able to reply to them. The connect page worked simply where the user's surfing ability was used to make a query to the UsersCollection in the database created by another team member, to find users with the same surfing ability. The code below shows how this was done:
+#### How Users Were Connected
+```javascript
+const userAbility = (this.props.currentUser.length === 0) ? 1 : (this.props.currentUser[0].ability);
+    const userTime = (this.props.currentUser.length === 0) ? '12:00am' : (this.props.currentUser[0].time);
+    return (
+      <Container textAlign='center' id='connect-page'>
+        <Header as='h3' style={headerStyle}>Users Connected By Surfing Ability</Header>
+        <Divider />
+        <Card.Group stackable centered>
+          {this.props.users.filter(user => user.ability === userAbility).map(user => <UserDisplay key={user._id} user={user} senderImage={this.props.currentUser[0].image} />)}
+        </Card.Group>
+        <Header as='h3' style={headerStyle}>Users Connected By Time</Header>
+        <Divider />
+        <Card.Group stackable centered>
+          {this.props.users.filter(user => user.time === userTime).map(user => <UserDisplay key={user._id} user={user} senderImage={this.props.currentUser[0].image} />)}
+        </Card.Group>
+        {/** Below Code is irrelevant to topic */}
+    );
+```
+The line ```javascript this.props.users.filter(user => user.ability === userAbility).map(user => <UserDisplay key={user._id} user={user} senderImage={this.props.currentUser[0].image} />``` specifically shows how the users matched to the user based on ability are found. Here is a picture below of the final Connect Page which has all matched users for a user and the messaging system:
+<img class="ui medium right floated rounded image" src="/images/surf-connect-connect-page.png">
+
+The the
 
 ### What I Learned
 
