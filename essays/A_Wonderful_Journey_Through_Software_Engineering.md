@@ -9,7 +9,6 @@ labels:
 - Agile Project Management
 - Coding Standards
 - User Interface Frameworks
-- Javascript
 ---
 
 ## A Plethora of Skills Earned Through the Journey
