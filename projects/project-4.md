@@ -47,7 +47,47 @@ const userAbility = (this.props.currentUser.length === 0) ? 1 : (this.props.curr
 The line ```this.props.users.filter(user => user.ability === userAbility).map(user => <UserDisplay key={user._id} user={user} senderImage={this.props.currentUser[0].image} />``` specifically shows how the users matched to the user based on ability are found. Here is a picture below of the final Connect Page which has all matched users for a user and the messaging system:
 <img class="ui medium right floated rounded image" src="/images/surf-connect-connect-page.png">
 
-The the
+Another significant impact I had on this project was the development of the real-time feature for the Forecasts Page. I had to dive out of the scope of the class and use some prior knowledge I had about API's which I learned over the summer. I found a realtime surf api online which was free and reliable. I made an update function that made an api call given the name of the spot as a parameter and I gathered the data from the call into an object which updates a previous Mongo DB document in the LocationsCollection which was developed by another team member. The Forecast Page frontend was developed by anlother user, so they loaded data onto the user interface for the user to see. Below is the code for this update function which makes the api call: 
+```javascript
+export const updateSurfData = async (locationName, spotName, spotImage) => {
+  // Makes API call to receive wave data for the spot given.
+  const waveInfo = await fetch('https://hawaiibeachsafety.com/rest/conditions.json?beach_id=5');
+  const waveInfoToJson = await waveInfo.json();
+  const locationInfo = searchSpot(waveInfoToJson, spotName);
+  const waveHeight = locationInfo.surf;
+  const wind = locationInfo.wind;
+  const weather = locationInfo.weather;
+  const temperature = locationInfo.temp;
+  const newHeight = getHeightRange(waveHeight);
+  const minWaveHeight = newHeight[0];
+  const maxWaveHeight = newHeight[1];
+  // Calculates the surf ability of the spot.
+  const ability = calculateAbility(minWaveHeight, maxWaveHeight);
+  // Creates a location object with the given information.
+  const location = {
+    name: locationName,
+    image: spotImage,
+    surf: `${minWaveHeight}-${maxWaveHeight} ft`,
+    wind: wind,
+    weather: weather,
+    temperature: temperature,
+    ability: ability,
+  };
+  // Checks if location is in DB.
+  if (Locations.collection.find({ name: location.name }).count() === 0) {
+    // Adds locations to DB.
+    Locations.collection.insert(location);
+  } else {
+    // Updates LocationCollection with new data from API.
+    Locations.collection.update({ name: locationName }, { $set: location }, (error) => (error ?
+      console.log(`Error updating location: ${spotName}`) :
+      console.log(`Successfully updated location: ${spotName}`)));
+  }
+};
+```
+The final result of the Forecast Page which uses this data looks like this:
+
+<img class="ui medium right floated rounded image" src="/images/surf-connect-forecast-page.jpg">
 
 ### What I Learned
 
