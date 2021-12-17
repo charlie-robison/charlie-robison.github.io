@@ -44,7 +44,7 @@ const userAbility = (this.props.currentUser.length === 0) ? 1 : (this.props.curr
         {/** Below Code is irrelevant to topic */}
     );
 ```
-The line ```javascript this.props.users.filter(user => user.ability === userAbility).map(user => <UserDisplay key={user._id} user={user} senderImage={this.props.currentUser[0].image} />``` specifically shows how the users matched to the user based on ability are found. Here is a picture below of the final Connect Page which has all matched users for a user and the messaging system:
+The line ```this.props.users.filter(user => user.ability === userAbility).map(user => <UserDisplay key={user._id} user={user} senderImage={this.props.currentUser[0].image} />``` specifically shows how the users matched to the user based on ability are found. Here is a picture below of the final Connect Page which has all matched users for a user and the messaging system:
 <img class="ui medium right floated rounded image" src="/images/surf-connect-connect-page.png">
 
 The the
