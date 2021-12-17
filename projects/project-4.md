@@ -47,7 +47,7 @@ const userAbility = (this.props.currentUser.length === 0) ? 1 : (this.props.curr
 The line ```this.props.users.filter(user => user.ability === userAbility).map(user => <UserDisplay key={user._id} user={user} senderImage={this.props.currentUser[0].image} />``` specifically shows how the users matched to the user based on ability are found. Here is a picture below of the final Connect Page which has all matched users for a user and the messaging system:
 <img class="ui medium right floated rounded image" src="/images/surf-connect-connect-page.png">
 
-Another significant impact I had on this project was the development of the real-time feature for the Forecasts Page. I had to dive out of the scope of the class and use some prior knowledge I had about API's which I learned over the summer. I found a realtime surf api online which was free and reliable. I made an update function that made an api call given the name of the spot as a parameter and I gathered the data from the call into an object which updates a previous Mongo DB document in the LocationsCollection which was developed by another team member. The Forecast Page frontend was developed by anlother user, so they loaded data onto the user interface for the user to see. Below is the code for this update function which makes the api call: 
+Another significant impact I had on this project was the development of the real-time feature for the Forecasts Page. I had to dive out of the scope of the class and use some prior knowledge I had about API's which I learned over the summer. I found a realtime surf api online which was free and reliable. I made an update function that made an api call given the name of the spot as a parameter and I gathered the data from the call into an object which updates a previous Mongo DB document in the LocationsCollection which was developed by another team member. The Forecasts Page frontend was developed by anlother user, so they loaded data onto the user interface for the user to see. Below is the code for this update function which makes the api call: 
 ```javascript
 export const updateSurfData = async (locationName, spotName, spotImage) => {
   // Makes API call to receive wave data for the spot given.
@@ -85,9 +85,9 @@ export const updateSurfData = async (locationName, spotName, spotImage) => {
   }
 };
 ```
-The final result of the Forecast Page which uses this data looks like this:
+The final result of the Forecasts Page which uses this data looks like this:
 
-<img class="ui medium right floated rounded image" src="/images/surf-connect-forecast-page.jpg">
+<img class="ui medium right floated rounded image" src="/images/surf-connect-forecasts-page.jpg">
 
 ### What I Learned
 
