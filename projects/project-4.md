@@ -87,7 +87,7 @@ export const updateSurfData = async (locationName, spotName, spotImage) => {
 ```
 The final result of the Forecasts Page which uses this data looks like this:
 
-<img class="ui medium right floated rounded image" src="/images/surf-connect-forecasts-page.jpg">
+<img class="ui medium right floated rounded image" src="/images/surf-connect-forecasts-page.png">
 
 ### What I Learned
 
