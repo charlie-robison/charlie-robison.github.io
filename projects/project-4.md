@@ -91,9 +91,8 @@ The final result of the Forecasts Page which uses this data looks like this:
 
 ### What I Learned
 
-Throughout the process I learned how to organize all my files and create seperate objects, methods and helper methods in my code for each part of the game. For example, the player had its own object which contained its level statistic, its image, and getter/setter methods to create animations. Another example is having a seperate function to create the player's health meter and a seprate function for the enemy movement and AI. Since this game is still in devlopment, I plan on adding multiplayaer functionality once I learn more about real time APIs. In all, I learned the most about using object oriented programming in a real setting and applied it to making a large video game.
-
+Throughout working on this project, I learned a large variety of skills. I think the most important skill I learned was working in a team of people to develop a product. I felt this is important because in the future I will need these skills as a software engineer. An example of some of the skills obtained from working in a team is using Github and its actions such as branching and merging actions. But learning how this works, I understood how to work on a project effieciently without having merge conflicts in the code which can break the system. Another major thing I learned from this project is going through the process of creating a full stack web application from start to finish. I learned a lot more about how User Interfaces, frontend code, and backend code all work together to form a application. Specifically, I have always wanted to learn how to develop a real-time messaging system, through this project I was able to build one which really taught me a lot about the basics of building a messaging system. The messaging system may have it flaws but at least I learned from it and I and happy to do more research on creating a better one. In all, the ws the most influenceable project on me up to this point and I feel the knowledge earned from this project stays with me forever. 
 ### Source Code
 
-[iOS RPG Source Code](https://github.com/charlie-robison/ios-game-source-code)
+[Surf Connect Source Code](https://surf-connect.github.io)
 
