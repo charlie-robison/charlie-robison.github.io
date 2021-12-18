@@ -18,7 +18,7 @@ labels:
 summary: Surf Connect is a website my team and I developed to connect surfers in the University of Hawaii community regardless of their skill level together. Surf Connect allows the user to pick a surfing ability and time they would like to surf and the app will give the user suggestions of users that match their surfing ability and time. The application also gives real-time surf forecast information for surf locations. My team and I used Github to work collaboratively on the project and followed the guidelines of Issue Driven Project Management.
 ---
 
-<img class="ui medium right floated rounded image" src="/images/surf-connect-landing-page.jpg">
+<img class="ui large rounded image" src="/images/surf-connect-landing-page.jpg">
 
 ### What Surf Connect is All About
 
@@ -48,7 +48,7 @@ const userAbility = (this.props.currentUser.length === 0) ? 1 : (this.props.curr
     );
 ```
 The line ```this.props.users.filter(user => user.ability === userAbility).map(user => <UserDisplay key={user._id} user={user} senderImage={this.props.currentUser[0].image} />``` specifically shows how the users matched to the user based on ability are found. Here is a picture below of the final Connect Page which has all matched users for a user and the messaging system:
-<img class="ui medium right floated rounded image" src="/images/surf-connect-connect-page.png">
+<img class="ui large rounded image" src="/images/surf-connect-connect-page.png">
 
 Another significant impact I had on this project was the development of the real-time feature for the Forecasts Page. I had to dive out of the scope of the class and use some prior knowledge I had about API's which I learned over the summer. I found a real-time surf API online which was free and reliable. I made an update function that made an API call given the name of the spot as a parameter and I gathered the data from the call into an object which updates a previous Mongo DB document in the LocationsCollection which was developed by another team member. The Forecasts Page frontend was developed by another user, so they loaded data onto the user interface for the user to see. Below is the code for this update function which makes the API call:
 
@@ -91,7 +91,7 @@ export const updateSurfData = async (locationName, spotName, spotImage) => {
 ```
 The final result of the Forecasts Page which uses this data looks like this:
 
-<img class="ui medium right floated rounded image" src="/images/surf-connect-forecasts-page.png">
+<img class="ui large rounded image" src="/images/surf-connect-forecasts-page.png">
 
 ### Takeaways
 
