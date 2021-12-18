@@ -13,7 +13,7 @@ labels:
   - DJango
   - UI
   - Full Stack
-    summary: A project I am currently developing is a social media iOS application that allows producers and rappers/singers to connect using a matching feature. Users can post, chat and follow other users on the app. The client-side of the app was made with swift while the server-side was made with python.
+summary: A project I am currently developing is a social media iOS application that allows producers and rappers/singers to connect using a matching feature. Users can post, chat and follow other users on the app. The client-side of the app was made with swift while the server-side was made with python.
 ---
 <img class="ui medium right floated rounded image" src="/images/RapCollab.png">
 
