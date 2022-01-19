@@ -69,7 +69,8 @@
         "MongoDB",
         "Python",
         "Java",
-        "Swift"
+        "Swift",
+        "MySQL",
       ]
     },
     {
@@ -80,7 +81,7 @@
         "Github",
         "Xcode",
         "DJango",
-        "Terminal",
+        "Unix",
         "VSCode"
       ]
     }
@@ -96,10 +97,12 @@
       "courses": [
         "ICS 111: Intro To Programming",
         "ICS 211: Data Structures",
+        "ICS 212: Program Structure",
         "ICS 311: Algorithms",
         "ICS 141: Discrete Math I",
         "ICS 241: Discrete Math II",
         "ICS 314: Software Engineering",
+        "ICS 321: Introduction to Databases",
         "Math 307: Linear Algebra",
         "Physics 151: College Physics",
         "Econ 130: Principles of Microeconomics",
@@ -166,6 +169,13 @@
       "type": "award",
       "title": "Deans List",
       "date": "June 2021",
+      "awarder": "University of Hawaii Manoa",
+      "summary": ""
+    },
+    {
+      "type": "award",
+      "title": "Deans List",
+      "date": "December 2021",
       "awarder": "University of Hawaii Manoa",
       "summary": ""
     }
