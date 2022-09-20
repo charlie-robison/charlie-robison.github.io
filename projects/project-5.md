@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/Inverse_Tik_Tak_Toe.png
+image: images/Adventure-Game-Picture.png
 title: 3D Sidescroller Video Game
 permalink: projects/inverse_tik_tak_toe
 # All dates must be YYYY-MM-DD format!
