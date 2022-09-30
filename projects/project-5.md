@@ -88,6 +88,6 @@ Throughout this process, I learned and enhanced many skills. The most prominent 
 
 ### Source Code
 
-[Mr.Hearty's Adventure Source Code](https://github.com/charlie-robison/mr.hearty-3d-sidescroller-game)
+
 
 
