@@ -3,7 +3,7 @@ layout: project
 type: project
 image: images/Mr.Hearty-Picture.png
 title: Mr.Hearty's Adventure Video Game
-permalink: projects/mr.hearty's_adventure_video_game
+permalink: projects/surf_connect_web_application
 # All dates must be YYYY-MM-DD format!
 date: 2022-06-24
 labels:
@@ -88,6 +88,6 @@ Throughout this process, I learned and enhanced many skills. The most prominent 
 
 ### Source Code
 
-
+[Mr.Hearty's Adventure Source Code](https://github.com/charlie-robison/mr.hearty-3d-sidescroller-game)
 
 
