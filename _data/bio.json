@@ -34,24 +34,25 @@
       ]
     },
     {
-      "name": "iOS Development",
-      "keywords": [
-        "E-commerce Applications",
-        "Social Media Applications"
-      ]
-    },
-    {
       "name": "Web Development",
       "keywords": [
-        "E-commerce Websites",
         "Custom Websites",
+        "E-commerce Websites",
         "Web APIs"
       ]
     },
     {
-      "name": "Game Development",
+      "name": "Video Game Development",
       "keywords": [
-        "iOS Games"
+        "3D Video Games",
+        "iOS Video Games"
+      ]
+    },
+    {
+      "name": "iOS Development",
+      "keywords": [
+        "E-commerce Applications",
+        "Social Media Applications"
       ]
     }
   ],
@@ -61,15 +62,15 @@
       "level": "",
       "keywords": [
         "Javascript",
+        "React",
         "Html",
         "CSS",
-        "React",
-        "Semantic UI",
+        "Bootstrap",
         "Meteor",
         "MongoDB",
         "Python",
         "Java",
-        "Swift",
+        "C#",
         "MySQL",
       ]
     },
@@ -78,11 +79,11 @@
       "level": "",
       "keywords": [
         "IntelliJ IDEA",
+        "Unity 3D",
         "Github",
         "Xcode",
-        "DJango",
         "Unix",
-        "VSCode"
+        "Visual Studio"
       ]
     }
   ],
