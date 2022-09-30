@@ -78,7 +78,7 @@ During the development of this video game I went through many issues, however, l
 
 
 #### How the Game Level's were Based Off of the Mechanics
-<img class="ui medium image" src="/images/mr.hearty-level-planning">
+<img class="ui medium image" src="/images/mr.hearty-level-planning.png">
 
 All aspects of this game were solely created by myself such as the 3D modeling. I am by no means an expert of 3D modeling, however, I wanted this game to feel more complete by adding characters and enemies. To do this, I learned how to use Blender (a 3D modeling program) to build these models. The 3D models were added to the game objects in the game near the end of development as I felt the functional part of the game was the most important. As placeholder's I used simple 3D cubes provided by Unity 3D.
 
