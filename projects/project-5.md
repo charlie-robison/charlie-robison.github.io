@@ -2,8 +2,8 @@
 layout: project
 type: project
 image: images/Mr.Hearty-Picture.png
-title: 3D Sidescroller Video Game
-permalink: projects/inverse_tik_tak_toe
+title: Mr.Hearty's Adventure Video Game
+permalink: projects/mr.hearty's-adventure-video-game
 # All dates must be YYYY-MM-DD format!
 date: 2022-06-24
 labels:
@@ -12,25 +12,26 @@ labels:
   - Object Oriented Programming
   - 3D Modeling in Blender
   - 3D Animation
-summary: In my ICS 111 class I developed a computer game using Java called Inverse Tik Tak Toe. The goal of the game is the opposite objective of normal Tik Tak Toe. In this game you must not get three symbols in a row to win, forcing your opponent to do so.
+  - Video Game Physics
+summary: This 3D side scroller game was a personal project of mine during the summer of 2022. Player's are able to move left/right, jump, and destroy enemies. The goal of the game is to reach the end of the course and collect all of the heart coins without being destroyed by any enemies. This game was created using Unity 3D, C# programming language, and Blender for 3D modeling.
 ---
 
-<img class="ui medium right floated rounded image" src="/images/Inverse_Tik_Tak_Toe.png">
+<img class="ui medium right floated rounded image" src="/images/Mr.Hearty-Picture.png">
 
-### What Inverse Tik Tak Toe is all about
+### What Mr.Hearty's Adventure Video Game is All About
 
-In my ICS 111 class (Introduction to Programming) I developed a small computer game named "Inverse Tik Tak Toe". The objective of the game is the opposite of normal Tik Tak Toe. To win the game, the opponent must get three symbols in a row before you do. The goal of the project was to learn more about the Java language and also learn more about using graphics in Java.
+Mr.Hearty's Adventure video game was a personal project of mine during the summer of 2022. The objective of the game is to finish the courses and collect heart coins without being destroyed by the enemies. The goal of this game was to not only to enhance my programming skills but also to apply it to an area of interest of mine which is video games. I found this project to be especially fun and interesting because it combined aspects of creativity, computer science, and physics. 
 
-### Development of Inverse Tik Tak Toe
+### Development of Mr.Hearty's Adventure Video Game
 
-This project was an individual project to test my skills in Java. With that said, I had to take on this project all by myself and I have never taken on a programming project this big up to this point. The key for me was to stay organized with my code and keep Java coding standards so that my code was easy to read whenever I took a break from programming. By doing this, it was easier for me to know where everything was and make programming more efficient.
+During the development of this video game I went through many issues, however, learned a lot after solving them. One issue I ran into was the actual process of making a video game to this scale. At first I was not organized and jumped right into the project without a plan because I was excited. With that being said, I started creating mechanics for the player based off the levels I was created instead of build levels off the player's mechanics. This was my biggest issue because every level would be different and having levels be based off mechanics would not only simplify the game in a good way but also make the level flow smoother. I solved this problem by building all of the player's mechanics first such as movement, jumping, double jumping, and wall jumping before building the levels. This led to positive development of the game and made the level flow much nicer. All aspects of this game were solely created by myself such as the 3D modeling. I am by no means an expert of 3D modeling, however, I wanted this game to feel more complete by adding characters and enemies. To do this, I learned how to use Blender (a 3D modeling program) to build these models. The 3D models were added to the game objects in the game near the end of development as I felt the functional part of the game was the most important. As placeholder's I used simple 3D cubes provided by Unity 3D.
 
 ### Skills Learned from Development
 
-Throughout this process, I also learned a little about basic AI. The opponent the user plays against is not a real person. I programmed the opponent to check where the player inserted their symbols and then randomly selected to place their symbol in a slot that the player did not select. This is basic AI, but I started to understand where I can build from this and how I can use AI in computer games. In all, this project has taught me many new concepts in Java and the use of basic AI in computer games.
+Throughout this process, I learned and enhanced many skills. The most prominent skill I learned during development was the actual creation of a video game at this scale which involved creating game objects, adding functionality to them, and giving them 3D models other than basic shapes. Another important skills that I learned during this process would be the use of Object Oriented Programming in a real life setting. I noticed that without Object Oriented Programming the development of the game would have been much slower and maybe even stopped. By abstracting much of the code, it allowed for less repetition and better organization. Lastly, another skill I would like to highlight that I learned was working with a 3D Video Game Engine. Previously, Working in a virtual 3D world is completely different than 2D but it taught me how to be more precise in my calculations and allowed me to enhance by trigonometry and physics skills in programming to make an object do what I wanted it to do.
 
 ### Source Code
 
-[Inverse_Tik_Tak_Toe_Source_Code.zip](https://github.com/charlie-robison/charlie-robison.github.io/files/7104551/Inverse_Tik_Tak_Toe_Source_Code.zip)
+[Mr.Hearty's Adventure Source Code](https://github.com/charlie-robison/mr.hearty-3d-sidescroller-game)
 
 
