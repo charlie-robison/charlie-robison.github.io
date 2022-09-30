@@ -3,7 +3,7 @@ layout: project
 type: project
 image: images/Mr.Hearty-Picture.png
 title: Mr.Hearty's Adventure Video Game
-permalink: projects/mr.hearty_game
+permalink: projects/sidescroller_game
 # All dates must be YYYY-MM-DD format!
 date: 2022-06-24
 labels:
