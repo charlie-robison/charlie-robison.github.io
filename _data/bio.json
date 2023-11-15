@@ -2,11 +2,11 @@
   "basics": {
     "name": "Charlie Robison",
     "label": "Student",
-    "picture": "https://charlie-robison.github.io/images/IMG_3158.JPG",
+    "picture": "https://charlie-robison.github.io/images/cover-pic.png",
     "email": "cprobiso@hawaii.edu",
     "phone": "808-352-0499",
     "website": "https://charlie-robison.github.io",
-    "summary": "I am a student studying Computer Science at UH Manoa. I love creating software and I am very passionate about Computer Science! I plan on graduating in 2024. My goal is to develop software for the world at my own business.",
+    "summary": "Computer science student studying at the University of Hawaii at Manoa with a focus on software engineering. Experienced in several programming languages and web application frameworks. Seeking a role which will enhance my skills as a software engineer and as a computer scientist as a whole.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -36,25 +36,19 @@
     {
       "name": "Web Development",
       "keywords": [
-        "Custom Websites",
-        "E-commerce Websites",
-        "Web APIs"
+        "Web Applications",
+        "Frontend Development",
+        "Backend Development",
+        "REST APIS",
+        "Database Developement"
       ]
     },
     {
-      "name": "Video Game Development",
+      "name": "Socket Programming",
       "keywords": [
-        "3D Video Games",
-        "iOS Video Games"
+        "Client/Server Applications",
       ]
     },
-    {
-      "name": "iOS Development",
-      "keywords": [
-        "E-commerce Applications",
-        "Social Media Applications"
-      ]
-    }
   ],
   "skills": [
     {
@@ -62,15 +56,17 @@
       "level": "",
       "keywords": [
         "Javascript",
+        "Python",
+        "Java",
+        "C/C++",
         "React",
+        "Django Rest Framework",
+        "Docker",
         "Html",
         "CSS",
         "Bootstrap",
         "Meteor",
         "MongoDB",
-        "Python",
-        "Java",
-        "C#",
         "MySQL",
       ]
     },
@@ -79,11 +75,11 @@
       "level": "",
       "keywords": [
         "IntelliJ IDEA",
-        "Unity 3D",
+        "Visual Studio",
+        "Linux",
         "Github",
         "Xcode",
-        "Unix",
-        "Visual Studio"
+        "Unity 3D",
       ]
     }
   ],
@@ -94,7 +90,7 @@
       "studyType": "B.S.",
       "startDate": "2020-08-24",
       "endDate": "Present",
-      "gpa": "3.87",
+      "gpa": "3.76",
       "courses": [
         "ICS 111: Intro To Programming",
         "ICS 211: Data Structures",
@@ -104,12 +100,14 @@
         "ICS 241: Discrete Math II",
         "ICS 314: Software Engineering",
         "ICS 321: Introduction to Databases",
+        "ICS 332: Operating Systems",
+        "ICS 312: Machine Level Systems",
+        "ICS 451: Data Networks",
+        "ICS 434: Data Science Fundamentals",
+        "ICS 438: Big Data Analytics",
+        "ICS 390: Ethics in Computing",
         "Math 307: Linear Algebra",
         "Physics 151: College Physics",
-        "Econ 130: Principles of Microeconomics",
-        "Music 108:  Fundamentals of Music",
-        "GEO 151: Geog & Contemporary Society",
-        "COM 201: Introduction to Communication"
       ]
     }, 
     {
@@ -124,9 +122,6 @@
         "Math 2B: Calculus 2",
         "Physics 2: Intro To Math Methods",
         "Physics 7C: Classical Physics",
-        "Physics 7LC: Classical Physics Lab",
-        "Writing 39B: Critical Reading and Rhetoric",
-        "Anthropology 2A: Intro To Socialcutural Anthropology"
       ]
     }
   ],
