@@ -7,14 +7,14 @@ permalink: projects/hurricane-interactive
 # All dates must be YYYY-MM-DD format!
 date: 2023-01-05
 labels:
-- Javascript/HTML/CSS
-- React
-- Python
-- Django Rest Framework
-- Docker
-- Packages for Data Science (Pandas, Numpy, xArray)
-- Conda Environment Setup
-  summary: As part of the Karaperidou Research Group, I was tasked to develop a hurricane simulator for the pacific ocean which predicts where a hurricane will go based on the winds, the sea surface temperature, and the location of pressure systems. 
+  - Javascript/HTML/CSS
+  - React
+  - Python
+  - Django Rest Framework
+  - Docker
+  - Packages for Data Science (Pandas, Numpy, xArray)
+  - Conda Environment Setup
+summary: As part of the Karaperidou Research Group, I was tasked to develop a hurricane simulator for the pacific ocean which predicts where a hurricane will go based on the winds, the sea surface temperature, and the location of pressure systems. 
 
 ---
 
