@@ -3,7 +3,7 @@ layout: project
 type: project
 image: images/HI-DOE-Home.png
 title: HI DOE Tracker
-permalink: projects/hi_doe-tracker
+permalink: projects/hi_doe_tracker
 # All dates must be YYYY-MM-DD format!
 date: 2022-08-17
 labels:
