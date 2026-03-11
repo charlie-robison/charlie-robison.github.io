@@ -164,8 +164,7 @@ const journey = [
 
 const metrics = [
   { label: "Current Role", value: "CTO & Co-Founder" },
-  { label: "Production Focus", value: "AI + Data Systems" },
-  { label: "Domain Impact", value: "Full Stack + AI + Data" },
+  { label: "Production Focus", value: "AI, ML & Data — Full Stack Versatility" },
 ];
 
 export default function Home() {
