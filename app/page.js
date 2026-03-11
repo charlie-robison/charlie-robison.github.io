@@ -36,7 +36,7 @@ const featuredProjects = [
     period: "Feb 2026 - Feb 2026",
     image: "/images/surf-connect-project-picture.png",
     videoType: "youtube",
-    videoSrc: "https://www.youtube.com/embed/zbSTuEA-xAQ?mute=1&playsinline=1&rel=0",
+    videoSrc: "https://www.youtube.com/embed/zbSTuEA-xAQ?autoplay=1&mute=1&playsinline=1&rel=0",
     url: "https://github.com/charlie-robison/gtfo",
     tags: ["Browser Agents", "AI Agents", "Model Context Protocol (MCP)", "Artificial Intelligence (AI)", "OpenClaw"],
   },
@@ -47,7 +47,7 @@ const featuredProjects = [
     period: "Feb 2026 - Feb 2026",
     image: "/images/hurricane-simulator-cover.png",
     videoType: "youtube",
-    videoSrc: "https://www.youtube.com/embed/NRuzdGr1ob0?mute=1&playsinline=1&rel=0",
+    videoSrc: "https://www.youtube.com/embed/NRuzdGr1ob0?autoplay=1&mute=1&playsinline=1&rel=0",
     url: "https://github.com/charlie-robison/pythia",
     tags: ["Model Context Protocol (MCP)", "Vector Databases", "AI Agents", "Web Scraping", "Software Development"],
   },
@@ -249,7 +249,7 @@ export default function Home() {
                       allowFullScreen
                     />
                   ) : project.videoType === "local" ? (
-                    <video src={project.videoSrc} muted playsInline loop controls preload="metadata" />
+                    <video src={project.videoSrc} autoPlay muted playsInline loop controls preload="metadata" />
                   ) : (
                     <Image src={project.image} alt={project.name} width={760} height={430} />
                   )}
