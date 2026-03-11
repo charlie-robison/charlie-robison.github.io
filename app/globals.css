@@ -316,6 +316,14 @@ h1 span {
   font-size: 1.07rem;
 }
 
+.project-period {
+  font-size: 0.8rem;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .project-body p {
   color: var(--text-soft);
   line-height: 1.65;

@@ -9,17 +9,55 @@ const navLinks = [
 
 const featuredProjects = [
   {
-    name: "Atmospheric Blocking Analytics Platform",
+    name: "Arceus (Robot Training Generation) - YC x Google DeepMind Hackathon",
     summary:
-      "Design and build the frontend and backend of an interactive web application which runs a machine learning model created by Dr. Christina Karamperidou that takes in a dataset, climatology, and time range and produces plots of pressure blocking frequency as a percentage, plots of time series, and an animation between years of plots.",
+      "Developed a multi-agent vision simulation using Gemini VLMs where attacker and defender agents competed in a 3D environment using live camera streams. The models learned from each round by storing summarized experiences in context, creating synthetic data for reinforcement learning training in MuJoCo robotics environments.",
+    period: "Mar 2026 - Mar 2026",
+    image: "/images/social-plai-cover.png",
+    url: "https://www.linkedin.com/in/charlierobison/",
+    tags: ["Reinforcement Learning", "VLM", "Robotics", "3D Rendering", "Artificial Intelligence (AI)", "Software Development"],
+  },
+  {
+    name: "Bio Fact (Biology Research Paper Fact Checker) - YC Hackathon",
+    summary:
+      "Built an AI-powered research validation system at a YC Bio Hackathon that fact-checks scientific papers by reproducing their experiments. AI agents extract claims from papers, generate synthetic datasets matching reported patterns, and automatically structure experiments to run on Tamarind cell models via MCP tool calls -- allowing rapid verification of biological research.",
+    period: "Mar 2026 - Mar 2026",
+    image: "/images/hi-doe-home.png",
+    url: "https://www.linkedin.com/in/charlierobison/",
+    tags: ["Synthetic Data Generation", "Model Context Protocol (MCP)", "Interdisciplinary Collaboration", "AI Agents", "Software Development"],
+  },
+  {
+    name: "GTFO (Automatic Moving Tool) - YC Hackathon",
+    summary:
+      "Built a multi-agent browser automation system that can autonomously move someone to a new city: discovering housing, submitting applications, updating addresses across websites, ordering a U-Haul, and furnishing the new home via Amazon using image-based inventory estimation. Demonstrates how coordinated AI agents can automate complex life logistics end-to-end.",
+    period: "Feb 2026 - Feb 2026",
+    image: "/images/surf-connect-project-picture.png",
+    url: "https://www.linkedin.com/in/charlierobison/",
+    tags: ["Browser Agents", "AI Agents", "Model Context Protocol (MCP)", "Artificial Intelligence (AI)", "OpenClaw"],
+  },
+  {
+    name: "Pythia (Polymarket Autonomous Trader) - YC Hackathon",
+    summary:
+      "Built a ChatGPT MCP application that enables users to discover and trade prediction markets on Polymarket using AI agents. The system uses a vector database to semantically search markets and channels based on user queries, then deploys AI agents to analyze market conditions and generate trading recommendations. It also includes an automated trading mode that executes trades on the highest-probability opportunities identified by the agents.",
+    period: "Feb 2026 - Feb 2026",
     image: "/images/hurricane-simulator-cover.png",
     url: "https://www.linkedin.com/in/charlierobison/",
-    tags: ["Climate Data", "Scientific Software", "Model Visualization", "Full Stack"],
+    tags: ["Model Context Protocol (MCP)", "Vector Databases", "AI Agents", "Web Scraping", "Software Development"],
+  },
+  {
+    name: "PaleoBlockNet Web Interface",
+    summary:
+      "A web application which utilizes the PaleoBlockNet v1.0 Deep Learning model for reconstructing Northern Hemisphere atmospheric blocking. Acknowledged in a Nature Paper: https://www.nature.com/articles/s43247-024-01687-y",
+    period: "May 2023 - May 2024",
+    image: "/images/hurricane-simulator-cover.png",
+    url: "https://www.nature.com/articles/s43247-024-01687-y",
+    tags: ["Data Science", "Software Development", "Project Management", "Technical Leadership", "Interdisciplinary Collaboration"],
   },
   {
     name: "Pacific Hurricane Interactive Simulator",
     summary:
       "Design and build an online interactive simulator using Javascript teaching students how hurricanes form in the Pacific Ocean by predicting their paths under certain conditions. Build a Rest API using Django to send wind data and sea surface temperature data from NOAA datasets through the API to the interactive simulator to generate accurate simulations.",
+    period: "Jan 2023 - May 2024",
     image: "/images/hurricane-simulator-cover.png",
     url: "https://github.com/charlie-robison",
     tags: ["JavaScript", "Django REST", "NOAA Data", "Interactive Learning"],
@@ -28,6 +66,7 @@ const featuredProjects = [
     name: "Social-Plai Screening Platform",
     summary:
       "Developed with a team of software engineers a web application which includes video games which help diagnose children with Autism and ADHD.",
+    period: "May 2023 - Aug 2023",
     image: "/images/social-plai-cover.png",
     url: "https://www.linkedin.com/in/charlierobison/",
     tags: ["Healthcare Tech", "Web Applications", "Team Engineering", "Games"],
@@ -37,7 +76,7 @@ const featuredProjects = [
 const skillGroups = [
   {
     title: "Top Skills (LinkedIn)",
-    items: ["Computer Networking", "Project Management", "Interdisciplinary Collaboration"],
+    items: ["Synthetic Data Generation", "Vector Databases", "Web Scraping"],
   },
   {
     title: "Frontend + Product",
@@ -182,7 +221,7 @@ export default function Home() {
       <section id="projects" className="section-wrap block">
         <div className="section-heading fade-up">
           <p>Featured Work</p>
-          <h2>Selected systems spanning retention AI, logistics software, and scientific web applications.</h2>
+          <h2>YC hackathon builds, research tooling, and production-oriented AI systems.</h2>
         </div>
         <div className="project-grid">
           {featuredProjects.map((project, index) => (
@@ -196,6 +235,7 @@ export default function Home() {
               </div>
               <div className="project-body">
                 <h3>{project.name}</h3>
+                <p className="project-period">{project.period}</p>
                 <p>{project.summary}</p>
                 <ul>
                   {project.tags.map((tag) => (
