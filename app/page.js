@@ -9,30 +9,6 @@ const navLinks = [
 
 const featuredProjects = [
   {
-    name: "Swivel Churn Intelligence Engine",
-    summary:
-      "Building production-grade AI, backend, and data systems that help subscription companies model churn patterns and identify retention strategies.",
-    image: "/images/hi-doe-home.png",
-    url: "https://www.linkedin.com/in/charlierobison/",
-    tags: ["AI Systems", "Retention Analytics", "Backend", "Data"],
-  },
-  {
-    name: "Transportation Management System",
-    summary:
-      "Designed and shipped an end-to-end logistics platform used across all Hawaiian islands for routing, scheduling, operational metrics, and data cleanup.",
-    image: "/images/hi-doe-home.png",
-    url: "https://www.linkedin.com/in/charlierobison/",
-    tags: ["Logistics Software", "Route Optimization", "Operations", "Full Stack"],
-  },
-  {
-    name: "Driver Mobile Operations App",
-    summary:
-      "Built a daily-use mobile workflow for delivery and pickup operations, improving fleet visibility for drivers and logistics managers.",
-    image: "/images/surf-connect-project-picture.png",
-    url: "https://www.linkedin.com/in/charlierobison/",
-    tags: ["Mobile Workflow", "Distribution Ops", "Product Delivery", "Execution"],
-  },
-  {
     name: "Atmospheric Blocking Analytics Platform",
     summary:
       "Developed a full-stack scientific application that runs climate models and generates pressure-blocking plots, time-series views, and animation outputs.",
