@@ -14,7 +14,9 @@ const featuredProjects = [
       "Developed a multi-agent vision simulation using Gemini VLMs where attacker and defender agents competed in a 3D environment using live camera streams. The models learned from each round by storing summarized experiences in context, creating synthetic data for reinforcement learning training in MuJoCo robotics environments.",
     period: "Mar 2026 - Mar 2026",
     image: "/images/social-plai-cover.png",
-    url: "https://www.linkedin.com/in/charlierobison/",
+    videoType: "local",
+    videoSrc: "/videos/arceus-demo.mp4",
+    url: "https://github.com/charlie-robison/arceus",
     tags: ["Reinforcement Learning", "VLM", "Robotics", "3D Rendering", "Artificial Intelligence (AI)", "Software Development"],
   },
   {
@@ -22,8 +24,9 @@ const featuredProjects = [
     summary:
       "Built an AI-powered research validation system at a YC Bio Hackathon that fact-checks scientific papers by reproducing their experiments. AI agents extract claims from papers, generate synthetic datasets matching reported patterns, and automatically structure experiments to run on Tamarind cell models via MCP tool calls -- allowing rapid verification of biological research.",
     period: "Mar 2026 - Mar 2026",
+    noMedia: true,
     image: "/images/hi-doe-home.png",
-    url: "https://www.linkedin.com/in/charlierobison/",
+    url: "https://github.com/charlie-robison/bio-fact",
     tags: ["Synthetic Data Generation", "Model Context Protocol (MCP)", "Interdisciplinary Collaboration", "AI Agents", "Software Development"],
   },
   {
@@ -32,7 +35,9 @@ const featuredProjects = [
       "Built a multi-agent browser automation system that can autonomously move someone to a new city: discovering housing, submitting applications, updating addresses across websites, ordering a U-Haul, and furnishing the new home via Amazon using image-based inventory estimation. Demonstrates how coordinated AI agents can automate complex life logistics end-to-end.",
     period: "Feb 2026 - Feb 2026",
     image: "/images/surf-connect-project-picture.png",
-    url: "https://www.linkedin.com/in/charlierobison/",
+    videoType: "youtube",
+    videoSrc: "https://www.youtube.com/embed/zbSTuEA-xAQ?mute=1&playsinline=1&rel=0",
+    url: "https://github.com/charlie-robison/gtfo",
     tags: ["Browser Agents", "AI Agents", "Model Context Protocol (MCP)", "Artificial Intelligence (AI)", "OpenClaw"],
   },
   {
@@ -41,7 +46,9 @@ const featuredProjects = [
       "Built a ChatGPT MCP application that enables users to discover and trade prediction markets on Polymarket using AI agents. The system uses a vector database to semantically search markets and channels based on user queries, then deploys AI agents to analyze market conditions and generate trading recommendations. It also includes an automated trading mode that executes trades on the highest-probability opportunities identified by the agents.",
     period: "Feb 2026 - Feb 2026",
     image: "/images/hurricane-simulator-cover.png",
-    url: "https://www.linkedin.com/in/charlierobison/",
+    videoType: "youtube",
+    videoSrc: "https://www.youtube.com/embed/NRuzdGr1ob0?mute=1&playsinline=1&rel=0",
+    url: "https://github.com/charlie-robison/pythia",
     tags: ["Model Context Protocol (MCP)", "Vector Databases", "AI Agents", "Web Scraping", "Software Development"],
   },
   {
@@ -49,7 +56,7 @@ const featuredProjects = [
     summary:
       "A web application which utilizes the PaleoBlockNet v1.0 Deep Learning model for reconstructing Northern Hemisphere atmospheric blocking. Acknowledged in a Nature Paper: https://www.nature.com/articles/s43247-024-01687-y",
     period: "May 2023 - May 2024",
-    image: "/images/hurricane-simulator-cover.png",
+    image: "/images/paleo-block.png",
     url: "https://www.nature.com/articles/s43247-024-01687-y",
     tags: ["Data Science", "Software Development", "Project Management", "Technical Leadership", "Interdisciplinary Collaboration"],
   },
@@ -230,9 +237,24 @@ export default function Home() {
               className="project-card fade-up"
               style={{ animationDelay: `${index * 80}ms` }}
             >
-              <div className="project-image">
-                <Image src={project.image} alt={project.name} width={760} height={430} />
-              </div>
+              {!project.noMedia && (
+                <div className="project-image">
+                  {project.videoType === "youtube" ? (
+                    <iframe
+                      src={project.videoSrc}
+                      title={`${project.name} video`}
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                    />
+                  ) : project.videoType === "local" ? (
+                    <video src={project.videoSrc} muted playsInline loop controls preload="metadata" />
+                  ) : (
+                    <Image src={project.image} alt={project.name} width={760} height={430} />
+                  )}
+                </div>
+              )}
               <div className="project-body">
                 <h3>{project.name}</h3>
                 <p className="project-period">{project.period}</p>

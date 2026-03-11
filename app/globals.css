@@ -297,12 +297,18 @@ h1 span {
 .project-image {
   position: relative;
   overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: rgba(5, 10, 18, 0.9);
 }
 
-.project-image img {
+.project-image img,
+.project-image video,
+.project-image iframe {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: cover;
+  border: 0;
 }
 
 .project-body {
