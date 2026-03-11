@@ -65,7 +65,7 @@ const skillGroups = [
   },
   {
     title: "Tooling",
-    items: ["GitHub", "Linux", "IntelliJ", "Visual Studio", "Xcode", "Unity 3D"],
+    items: ["GitHub", "Linux", "IntelliJ", "Visual Studio", "Xcode"],
   },
 ];
 
