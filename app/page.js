@@ -6,7 +6,6 @@ import GlowCard from "./components/GlowCard";
 
 const navLinks = [
   { label: "Work", href: "#projects" },
-  { label: "Skills", href: "#skills" },
   { label: "Journey", href: "#journey" },
   { label: "Contact", href: "#contact" },
 ];
@@ -118,6 +117,7 @@ const journey = [
     company: "Swivel Churn",
     detail:
       "For subscription companies that implement retention practices to reduce churn, Swivel creates synthetic customer segments replicating their target audience, exactly why different customer segments might churn and identify the best strategies to retain.",
+    skills: ["Machine Learning", "Artificial Intelligence (AI)", "Software Development", "Technical Leadership", "Data Science"],
     active: true,
   },
   {
@@ -126,6 +126,7 @@ const journey = [
     company: "Hawaii Foodservice Alliance LLC",
     detail:
       "Work closely with operations to design and develop a series of software applications to improve our logistics and distribution problems. Built a full end-to-end Transportation Management System software application which includes a Driver's application for deliveries/pickups, route optimization scheduling, metrics for optimizing inefficiencies, and pages for data clean up.",
+    skills: ["Java", "Spring Framework", "TypeScript", "React.js", "Full-Stack Development", "TSQL", "WebAssembly", "Artificial Intelligence (AI)", "Machine Learning"],
   },
   {
     period: "Feb 2024 - Apr 2024",
@@ -133,6 +134,7 @@ const journey = [
     company: "Business Solution Technologies",
     detail:
       "Develop the frontend and backend for new components for web applications and software.",
+    skills: ["PHP", "MySQL", "JavaScript", "jQuery", "Web Application Development"],
   },
   {
     period: "Jan 2023 - May 2024",
@@ -140,6 +142,7 @@ const journey = [
     company: "Karamperidou Research Group",
     detail:
       "Design and build the frontend and backend of an interactive web application which runs a machine learning model created by Dr. Christina Karamperidou that takes in a dataset, climatology, and time range and produces plots of pressure blocking frequency as a percentage, plots of time series, and an animation between years of plots. Contributions acknowledged in a Nature Climate & Earth Science publication.",
+    skills: ["Django", "Python", "PostgreSQL", "JavaScript", "React.js", "Docker", "Django REST Framework"],
   },
   {
     period: "May 2023 - Aug 2023",
@@ -147,6 +150,7 @@ const journey = [
     company: "Hawaii Digital Health Lab",
     detail:
       "Developed with a team of software engineers a web application which includes video games which help diagnose children with Autism and ADHD.",
+    skills: ["Meteor.js", "JavaScript", "React.js", "Amazon Web Services (AWS)", "MongoDB"],
   },
   {
     period: "2019 - 2024",
@@ -154,13 +158,14 @@ const journey = [
     company: "University of Hawaii at Manoa",
     detail:
       "Bachelor's degree, Computer Science.",
+    skills: [],
   },
 ];
 
 const metrics = [
   { label: "Current Role", value: "CTO & Co-Founder" },
   { label: "Production Focus", value: "AI + Data Systems" },
-  { label: "Domain Impact", value: "Logistics + Climate + Health" },
+  { label: "Domain Impact", value: "Full Stack + AI + Data" },
 ];
 
 export default function Home() {
@@ -193,13 +198,6 @@ export default function Home() {
       <section id="top" className="hero section-wrap">
         <div className="hero-copy">
           <ScrollReveal>
-            <div className="status-badge">
-              <span className="status-dot" />
-              Available for opportunities
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal delay={100}>
             <p className="eyebrow">CTO | Co-Founder @ Swivel</p>
           </ScrollReveal>
 
@@ -319,34 +317,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ───── SKILLS ───── */}
-      <section id="skills" className="section-wrap block">
-        <ScrollReveal>
-          <div className="section-heading">
-            <div className="section-label">
-              <span className="label-line" />
-              Skills Snapshot
-            </div>
-            <h2>Engineering, delivery, and cross-functional execution from early build to production scale.</h2>
-          </div>
-        </ScrollReveal>
-
-        <div className="skill-grid">
-          {skillGroups.map((group, index) => (
-            <ScrollReveal key={group.title} delay={index * 120}>
-              <GlowCard className="skill-card">
-                <h3>{group.title}</h3>
-                <div className="skill-tags">
-                  {group.items.map((item) => (
-                    <span key={item} className="skill-tag">{item}</span>
-                  ))}
-                </div>
-              </GlowCard>
-            </ScrollReveal>
-          ))}
-        </div>
-      </section>
-
       {/* ───── JOURNEY ───── */}
       <section id="journey" className="section-wrap block">
         <ScrollReveal>
@@ -370,6 +340,13 @@ export default function Home() {
                 <h3>{item.title}</h3>
                 <h4>{item.company}</h4>
                 <p>{item.detail}</p>
+                {item.skills.length > 0 && (
+                  <div className="timeline-skills">
+                    {item.skills.map((skill) => (
+                      <span key={skill} className="skill-tag">{skill}</span>
+                    ))}
+                  </div>
+                )}
               </GlowCard>
             </ScrollReveal>
           ))}

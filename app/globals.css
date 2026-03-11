@@ -734,11 +734,21 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
+  align-items: stretch;
+}
+
+.timeline > div {
+  height: 100%;
+}
+
+.timeline .glow-card {
+  height: 100%;
 }
 
 .timeline-card .glow-card-content {
   padding: 1.25rem;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 0.55rem;
 }
 
@@ -788,6 +798,16 @@ h1 {
   color: var(--text-soft);
   line-height: 1.65;
   font-size: 0.85rem;
+  flex: 1;
+}
+
+.timeline-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line);
 }
 
 /* ═══════════════════════════════════════════
