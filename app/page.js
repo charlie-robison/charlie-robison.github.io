@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ProjectMedia from "./components/ProjectMedia";
 
 const navLinks = [
   { label: "Work", href: "#projects" },
@@ -36,7 +37,7 @@ const featuredProjects = [
     period: "Feb 2026 - Feb 2026",
     image: "/images/surf-connect-project-picture.png",
     videoType: "youtube",
-    videoSrc: "https://www.youtube.com/embed/zbSTuEA-xAQ?autoplay=1&mute=1&playsinline=1&rel=0",
+    videoSrc: "https://www.youtube.com/embed/zbSTuEA-xAQ?autoplay=1&mute=1&playsinline=1&rel=0&enablejsapi=1",
     url: "https://github.com/charlie-robison/gtfo",
     tags: ["Browser Agents", "AI Agents", "Model Context Protocol (MCP)", "Artificial Intelligence (AI)", "OpenClaw"],
   },
@@ -47,7 +48,7 @@ const featuredProjects = [
     period: "Feb 2026 - Feb 2026",
     image: "/images/hurricane-simulator-cover.png",
     videoType: "youtube",
-    videoSrc: "https://www.youtube.com/embed/NRuzdGr1ob0?autoplay=1&mute=1&playsinline=1&rel=0",
+    videoSrc: "https://www.youtube.com/embed/NRuzdGr1ob0?autoplay=1&mute=1&playsinline=1&rel=0&enablejsapi=1",
     url: "https://github.com/charlie-robison/pythia",
     tags: ["Model Context Protocol (MCP)", "Vector Databases", "AI Agents", "Web Scraping", "Software Development"],
   },
@@ -237,24 +238,7 @@ export default function Home() {
               className="project-card fade-up"
               style={{ animationDelay: `${index * 80}ms` }}
             >
-              {!project.noMedia && (
-                <div className="project-image">
-                  {project.videoType === "youtube" ? (
-                    <iframe
-                      src={project.videoSrc}
-                      title={`${project.name} video`}
-                      loading="lazy"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerPolicy="strict-origin-when-cross-origin"
-                      allowFullScreen
-                    />
-                  ) : project.videoType === "local" ? (
-                    <video src={project.videoSrc} autoPlay muted playsInline loop controls preload="metadata" />
-                  ) : (
-                    <Image src={project.image} alt={project.name} width={760} height={430} />
-                  )}
-                </div>
-              )}
+              <ProjectMedia project={project} />
               <div className="project-body">
                 <h3>{project.name}</h3>
                 <p className="project-period">{project.period}</p>
