@@ -11,7 +11,7 @@ const featuredProjects = [
   {
     name: "Atmospheric Blocking Analytics Platform",
     summary:
-      "Developed a full-stack scientific application that runs climate models and generates pressure-blocking plots, time-series views, and animation outputs.",
+      "Design and build the frontend and backend of an interactive web application which runs a machine learning model created by Dr. Christina Karamperidou that takes in a dataset, climatology, and time range and produces plots of pressure blocking frequency as a percentage, plots of time series, and an animation between years of plots.",
     image: "/images/hurricane-simulator-cover.png",
     url: "https://www.linkedin.com/in/charlierobison/",
     tags: ["Climate Data", "Scientific Software", "Model Visualization", "Full Stack"],
@@ -19,7 +19,7 @@ const featuredProjects = [
   {
     name: "Pacific Hurricane Interactive Simulator",
     summary:
-      "Built an educational web simulator backed by NOAA wind and sea-surface data exposed through a Django REST API for realistic prediction behavior.",
+      "Design and build an online interactive simulator using Javascript teaching students how hurricanes form in the Pacific Ocean by predicting their paths under certain conditions. Build a Rest API using Django to send wind data and sea surface temperature data from NOAA datasets through the API to the interactive simulator to generate accurate simulations.",
     image: "/images/hurricane-simulator-cover.png",
     url: "https://github.com/charlie-robison",
     tags: ["JavaScript", "Django REST", "NOAA Data", "Interactive Learning"],
@@ -27,7 +27,7 @@ const featuredProjects = [
   {
     name: "Social-Plai Screening Platform",
     summary:
-      "Collaborated with software engineers to build a web platform with games used for early autism and ADHD screening in children.",
+      "Developed with a team of software engineers a web application which includes video games which help diagnose children with Autism and ADHD.",
     image: "/images/social-plai-cover.png",
     url: "https://www.linkedin.com/in/charlierobison/",
     tags: ["Healthcare Tech", "Web Applications", "Team Engineering", "Games"],
@@ -36,8 +36,8 @@ const featuredProjects = [
 
 const skillGroups = [
   {
-    title: "Leadership + Execution",
-    items: ["Project Management", "Interdisciplinary Collaboration", "Product Thinking", "System Ownership"],
+    title: "Top Skills (LinkedIn)",
+    items: ["Computer Networking", "Project Management", "Interdisciplinary Collaboration"],
   },
   {
     title: "Frontend + Product",
@@ -59,42 +59,42 @@ const journey = [
     title: "CTO | Co-Founder",
     company: "Swivel Churn",
     detail:
-      "Leading engineering for AI, data, and backend systems focused on churn prediction and retention strategy for subscription businesses.",
+      "For subscription companies that implement retention practices to reduce churn, Swivel creates synthetic customer segments replicating their target audience, exactly why different customer segments might churn and identify the best strategies to retain.",
   },
   {
     period: "Apr 2024 - Dec 2025",
     title: "Full Stack Developer",
     company: "Hawaii Foodservice Alliance LLC",
     detail:
-      "Delivered multi-island logistics software, including a transportation management platform and a driver app used daily in operations.",
+      "Work closely with operations to design and develop a series of software applications to improve our logistics and distribution problems. Built a full end-to-end Transportation Management System software application which includes a Driver's application for deliveries/pickups, route optimization scheduling, metrics for optimizing inefficiencies, and pages for data clean up.",
   },
   {
     period: "Feb 2024 - Apr 2024",
     title: "Web Application Developer",
     company: "Business Solution Technologies",
     detail:
-      "Built new frontend and backend components for internal and client-facing web applications.",
+      "Develop the frontend and backend for new components for web applications and software.",
   },
   {
     period: "Jan 2023 - May 2024",
     title: "Full Stack Web Application Developer",
     company: "Karamperidou Research Group",
     detail:
-      "Built climate research software and educational simulators; contributions were acknowledged in a peer-reviewed Nature Climate & Earth Science publication.",
+      "Design and build the frontend and backend of an interactive web application which runs a machine learning model created by Dr. Christina Karamperidou that takes in a dataset, climatology, and time range and produces plots of pressure blocking frequency as a percentage, plots of time series, and an animation between years of plots. Contributions acknowledged in a Nature Climate & Earth Science publication.",
   },
   {
     period: "May 2023 - Aug 2023",
     title: "Web Application Developer",
     company: "Hawaii Digital Health Lab",
     detail:
-      "Helped develop a game-based web application for early autism and ADHD diagnostic support.",
+      "Developed with a team of software engineers a web application which includes video games which help diagnose children with Autism and ADHD.",
   },
   {
     period: "2019 - 2024",
     title: "Bachelor's Degree, Computer Science",
     company: "University of Hawaii at Manoa",
     detail:
-      "Completed computer science studies after beginning undergraduate coursework at UC Irvine.",
+      "Bachelor's degree, Computer Science.",
   },
 ];
 
@@ -129,8 +129,8 @@ export default function Home() {
             <span>Building production-grade AI, data, and backend systems for real-world outcomes.</span>
           </h1>
           <p className="lead">
-            Software engineer and startup technical leader with experience across logistics platforms, climate research tools, and health-tech applications.
-            I focus on shipping scalable systems that perform under messy, real-world constraints.
+            CTO and co-founder at Swivel, where I build production-grade AI, data, and backend systems that turn real customer data into actionable decisions.
+            My focus is on shipping scalable systems that work in messy, real-world environments.
           </p>
           <div className="cta-row">
             <a className="button primary" href="#contact">
