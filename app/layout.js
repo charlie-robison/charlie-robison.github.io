@@ -3,7 +3,7 @@ import "./globals.css";
 export const metadata = {
   title: "Charlie Robison | Software Engineer",
   description:
-    "Modern portfolio for Charlie Robison: software engineer focused on full-stack apps, data-driven systems, and polished user experiences.",
+    "Portfolio of Charlie Robison, CTO and full-stack engineer building production AI, data, and backend systems across startup, logistics, and research domains.",
 };
 
 export default function RootLayout({ children }) {

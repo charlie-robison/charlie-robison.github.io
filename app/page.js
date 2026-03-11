@@ -9,94 +9,123 @@ const navLinks = [
 
 const featuredProjects = [
   {
-    name: "Hurricane Interactive Web App",
+    name: "Swivel Churn Intelligence Engine",
     summary:
-      "Built a hurricane path simulator powered by NOAA-derived data, React controls, and a Django REST backend packaged with Docker.",
+      "Building production-grade AI, backend, and data systems that help subscription companies model churn patterns and identify retention strategies.",
+    image: "/images/hi-doe-home.png",
+    url: "https://www.linkedin.com/in/charlierobison/",
+    tags: ["AI Systems", "Retention Analytics", "Backend", "Data"],
+  },
+  {
+    name: "Transportation Management System",
+    summary:
+      "Designed and shipped an end-to-end logistics platform used across all Hawaiian islands for routing, scheduling, operational metrics, and data cleanup.",
+    image: "/images/hi-doe-home.png",
+    url: "https://www.linkedin.com/in/charlierobison/",
+    tags: ["Logistics Software", "Route Optimization", "Operations", "Full Stack"],
+  },
+  {
+    name: "Driver Mobile Operations App",
+    summary:
+      "Built a daily-use mobile workflow for delivery and pickup operations, improving fleet visibility for drivers and logistics managers.",
+    image: "/images/surf-connect-project-picture.png",
+    url: "https://www.linkedin.com/in/charlierobison/",
+    tags: ["Mobile Workflow", "Distribution Ops", "Product Delivery", "Execution"],
+  },
+  {
+    name: "Atmospheric Blocking Analytics Platform",
+    summary:
+      "Developed a full-stack scientific application that runs climate models and generates pressure-blocking plots, time-series views, and animation outputs.",
+    image: "/images/hurricane-simulator-cover.png",
+    url: "https://www.linkedin.com/in/charlierobison/",
+    tags: ["Climate Data", "Scientific Software", "Model Visualization", "Full Stack"],
+  },
+  {
+    name: "Pacific Hurricane Interactive Simulator",
+    summary:
+      "Built an educational web simulator backed by NOAA wind and sea-surface data exposed through a Django REST API for realistic prediction behavior.",
     image: "/images/hurricane-simulator-cover.png",
     url: "https://github.com/charlie-robison",
-    tags: ["React", "Django REST", "Python", "Docker"],
+    tags: ["JavaScript", "Django REST", "NOAA Data", "Interactive Learning"],
   },
   {
-    name: "Social-Plai Gaming Platform",
+    name: "Social-Plai Screening Platform",
     summary:
-      "Developed real-time multiplayer messaging, invitation flows, and cloud deployment for a health-focused gaming platform.",
+      "Collaborated with software engineers to build a web platform with games used for early autism and ADHD screening in children.",
     image: "/images/social-plai-cover.png",
-    url: "https://github.com/charlie-robison",
-    tags: ["React", "Meteor", "MongoDB Atlas", "AWS"],
-  },
-  {
-    name: "Surf Connect",
-    summary:
-      "Created matching, messaging, and live surf forecast experiences for a full-stack community web application.",
-    image: "/images/surf-connect-project-picture.png",
-    url: "https://surf-connect.github.io",
-    tags: ["React", "Meteor", "MongoDB", "APIs"],
-  },
-  {
-    name: "HI DOE Tracker",
-    summary:
-      "Contributed to a 10-person team app for legislative bill tracking and testimony approval workflows for Hawaii DOE.",
-    image: "/images/hi-doe-home.png",
-    url: "https://hi-doe-tracker.github.io/",
-    tags: ["JavaScript", "React", "Meteor", "Bootstrap"],
-  },
-  {
-    name: "Mr. Hearty's Adventure",
-    summary:
-      "Built a complete side-scroller game with custom movement systems, enemy logic, and original 3D modeling work.",
-    image: "/images/mr-hearty-picture.png",
-    url: "https://github.com/charlie-robison/mr.hearty-3d-sidescroller-game",
-    tags: ["C#", "Unity", "Blender", "Game Physics"],
+    url: "https://www.linkedin.com/in/charlierobison/",
+    tags: ["Healthcare Tech", "Web Applications", "Team Engineering", "Games"],
   },
 ];
 
 const skillGroups = [
   {
-    title: "Languages",
-    items: ["JavaScript", "Python", "Java", "C/C++", "C#", "HTML", "CSS"],
+    title: "Leadership + Execution",
+    items: ["Project Management", "Interdisciplinary Collaboration", "Product Thinking", "System Ownership"],
   },
   {
-    title: "Frameworks",
-    items: ["React", "Meteor", "Django REST Framework", "Bootstrap"],
+    title: "Frontend + Product",
+    items: ["JavaScript", "React", "HTML", "CSS", "Workflow Design"],
   },
   {
-    title: "Data + Infra",
-    items: ["MongoDB", "MySQL", "Docker", "AWS", "REST APIs"],
+    title: "Backend + Data",
+    items: ["Python", "Django REST Framework", "API Design", "Data Pipelines", "Machine Learning Integration"],
   },
   {
-    title: "Tooling",
-    items: ["GitHub", "Linux", "IntelliJ", "Visual Studio", "Xcode"],
+    title: "Infrastructure + Ops",
+    items: ["AWS", "Docker", "MongoDB", "MySQL", "Computer Networking"],
   },
 ];
 
 const journey = [
   {
-    period: "2023",
-    title: "Software Engineering Intern",
-    company: "Hawaii Digital Health Lab",
+    period: "Sep 2025 - Present",
+    title: "CTO | Co-Founder",
+    company: "Swivel Churn",
     detail:
-      "Shipped multiplayer messaging features, online gameplay support, and AWS-backed deployment for Social-Plai.",
+      "Leading engineering for AI, data, and backend systems focused on churn prediction and retention strategy for subscription businesses.",
   },
   {
-    period: "2022-2023",
-    title: "Research Web Developer",
+    period: "Apr 2024 - Dec 2025",
+    title: "Full Stack Developer",
+    company: "Hawaii Foodservice Alliance LLC",
+    detail:
+      "Delivered multi-island logistics software, including a transportation management platform and a driver app used daily in operations.",
+  },
+  {
+    period: "Feb 2024 - Apr 2024",
+    title: "Web Application Developer",
+    company: "Business Solution Technologies",
+    detail:
+      "Built new frontend and backend components for internal and client-facing web applications.",
+  },
+  {
+    period: "Jan 2023 - May 2024",
+    title: "Full Stack Web Application Developer",
     company: "Karamperidou Research Group",
     detail:
-      "Developed interactive climate visualization UI and backend API services for hurricane simulation experiments.",
+      "Built climate research software and educational simulators; contributions were acknowledged in a peer-reviewed Nature Climate & Earth Science publication.",
   },
   {
-    period: "2020-2024",
-    title: "B.S. Computer Science",
+    period: "May 2023 - Aug 2023",
+    title: "Web Application Developer",
+    company: "Hawaii Digital Health Lab",
+    detail:
+      "Helped develop a game-based web application for early autism and ADHD diagnostic support.",
+  },
+  {
+    period: "2019 - 2024",
+    title: "Bachelor's Degree, Computer Science",
     company: "University of Hawaii at Manoa",
     detail:
-      "Graduated with software engineering, algorithms, systems, and data-focused coursework experience.",
+      "Completed computer science studies after beginning undergraduate coursework at UC Irvine.",
   },
 ];
 
 const metrics = [
-  { label: "Projects Shipped", value: "10+" },
-  { label: "Core Tech Stack", value: "React + Python" },
-  { label: "Focus", value: "Product-Ready UX" },
+  { label: "Current Role", value: "CTO & Co-Founder" },
+  { label: "Production Focus", value: "AI + Data Systems" },
+  { label: "Domain Impact", value: "Logistics + Climate + Health" },
 ];
 
 export default function Home() {
@@ -118,13 +147,14 @@ export default function Home() {
 
       <section id="top" className="hero section-wrap">
         <div className="hero-copy fade-up delay-1">
-          <p className="eyebrow">Software Engineer</p>
+          <p className="eyebrow">CTO | Co-Founder @ Swivel</p>
           <h1>
             Charlie Robison
-            <span>Building software people actually enjoy using.</span>
+            <span>Building production-grade AI, data, and backend systems for real-world outcomes.</span>
           </h1>
           <p className="lead">
-            I design and build full-stack experiences that combine strong engineering, clean interfaces, and real-world impact.
+            Software engineer and startup technical leader with experience across logistics platforms, climate research tools, and health-tech applications.
+            I focus on shipping scalable systems that perform under messy, real-world constraints.
           </p>
           <div className="cta-row">
             <a className="button primary" href="#contact">
@@ -160,10 +190,10 @@ export default function Home() {
             />
           </div>
           <div className="profile-meta">
-            <p>Honolulu, Hawaii</p>
-            <a href="mailto:cprobiso@hawaii.edu">cprobiso@hawaii.edu</a>
+            <p>San Francisco Bay Area</p>
+            <a href="mailto:charlierobison480@gmail.com">charlierobison480@gmail.com</a>
             <a
-              href="https://linkedin.com/in/charlie-robison-32540021b"
+              href="https://www.linkedin.com/in/charlierobison/"
               target="_blank"
               rel="noreferrer"
             >
@@ -176,7 +206,7 @@ export default function Home() {
       <section id="projects" className="section-wrap block">
         <div className="section-heading fade-up">
           <p>Featured Work</p>
-          <h2>Selected projects across web apps, research systems, and interactive platforms.</h2>
+          <h2>Selected systems spanning retention AI, logistics software, and scientific web applications.</h2>
         </div>
         <div className="project-grid">
           {featuredProjects.map((project, index) => (
@@ -208,7 +238,7 @@ export default function Home() {
       <section id="skills" className="section-wrap block split">
         <div className="section-heading fade-up">
           <p>Skills Snapshot</p>
-          <h2>Modern engineering toolkit from frontend polish to backend reliability.</h2>
+          <h2>Engineering, delivery, and cross-functional execution from early build to production scale.</h2>
         </div>
         <div className="skill-grid fade-up delay-1">
           {skillGroups.map((group) => (
@@ -227,7 +257,7 @@ export default function Home() {
       <section id="journey" className="section-wrap block">
         <div className="section-heading fade-up">
           <p>Journey</p>
-          <h2>Experience built through team products, research, and delivery-focused execution.</h2>
+          <h2>Career progression across startup leadership, enterprise logistics, and research engineering.</h2>
         </div>
         <div className="timeline">
           {journey.map((item, index) => (
@@ -242,10 +272,10 @@ export default function Home() {
       </section>
 
       <section id="contact" className="section-wrap block contact-card fade-up">
-        <p>Open to software engineering opportunities and collaborations.</p>
-        <h2>Let&apos;s build something that feels excellent and performs even better.</h2>
+        <p>Open to technical leadership, product engineering, and high-impact software collaborations.</p>
+        <h2>Let&apos;s build systems that scale, measure what matters, and create real leverage.</h2>
         <div className="cta-row">
-          <a className="button primary" href="mailto:cprobiso@hawaii.edu">
+          <a className="button primary" href="mailto:charlierobison480@gmail.com">
             Email Me
           </a>
           <a
