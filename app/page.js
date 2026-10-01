@@ -256,7 +256,7 @@ export default function Home() {
                 src="/images/profile-picture.jpg"
                 alt="Charlie Robison"
                 width={420}
-                height={520}
+                height={420}
                 priority
               />
             </div>
