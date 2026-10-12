@@ -1,0 +1,185 @@
+{
+  "basics": {
+    "name": "Charlie Robison",
+    "label": "Student",
+    "picture": "https://charlie-robison.github.io/images/avatar-pic.png",
+    "email": "cprobiso@hawaii.edu",
+    "phone": "808-352-0499",
+    "website": "https://charlie-robison.github.io",
+    "summary": "Computer science student studying at the University of Hawaii at Manoa with a focus on software engineering. Experienced in several programming languages and web application frameworks. Seeking a role which will enhance my skills as a software engineer and as a computer scientist as a whole.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Honolulu",
+      "countryCode": "USA",
+      "region": "Hawaii"
+    },
+    "profiles": [
+      {
+        "network": "github",
+        "username": "charlie-robison",
+        "url": "http://github.com/charlie-robison"
+      },
+      {
+        "network": "linkedin",
+        "username": "charlie-robison-32540021b",
+        "url": "http://linkedin.com/in/charlie-robison-32540021b"
+      }
+    ]
+  },
+  "interests": [
+    {
+      "name": "Software engineering",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "Web Development",
+      "keywords": [
+        "Web Applications",
+        "Frontend Development",
+        "Backend Development",
+        "REST APIS",
+        "Database Developement"
+      ]
+    },
+    {
+      "name": "Socket Programming",
+      "keywords": [
+        "Client/Server Applications",
+      ]
+    },
+  ],
+  "skills": [
+    {
+      "name": "Languages and Frameworks",
+      "level": "",
+      "keywords": [
+        "Javascript",
+        "Python",
+        "Java",
+        "C/C++",
+        "React",
+        "Django Rest Framework",
+        "Docker",
+        "Html",
+        "CSS",
+        "Bootstrap",
+        "Meteor",
+        "MongoDB",
+        "MySQL",
+      ]
+    },
+    {
+      "name": "Programming Tools",
+      "level": "",
+      "keywords": [
+        "IntelliJ IDEA",
+        "Visual Studio",
+        "Linux",
+        "Github",
+        "Xcode",
+        "Unity 3D"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Hawaii, Honolulu, HI",
+      "area": "Computer Science (Expected Graduation: Spring, 2024)",
+      "studyType": "B.S.",
+      "startDate": "2020-08-24",
+      "endDate": "Present",
+      "gpa": "3.76",
+      "courses": [
+        "ICS 111: Intro To Programming",
+        "ICS 211: Data Structures",
+        "ICS 212: Program Structure",
+        "ICS 311: Algorithms",
+        "ICS 141: Discrete Math I",
+        "ICS 241: Discrete Math II",
+        "ICS 314: Software Engineering",
+        "ICS 321: Introduction to Databases",
+        "ICS 332: Operating Systems",
+        "ICS 312: Machine Level Systems",
+        "ICS 451: Data Networks",
+        "ICS 434: Data Science Fundamentals",
+        "ICS 438: Big Data Analytics",
+        "ICS 390: Ethics in Computing",
+        "Math 307: Linear Algebra",
+        "Physics 151: College Physics",
+      ]
+    },
+    {
+      "institution": "University of California Irvine",
+      "area": "Physics",
+      "studyType": "B.S.",
+      "startDate": "2019-09-22",
+      "endDate": "2020-04-01",
+      "gpa": "3.788",
+      "courses": [
+        "Math 2A: Calculus 1",
+        "Math 2B: Calculus 2",
+        "Physics 2: Intro To Math Methods",
+        "Physics 7C: Classical Physics",
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "Bloomingdales",
+      "position": "Sales Person",
+      "website": "https://www.bloomingdales.com/",
+      "startDate": "2020-10-20",
+      "endDate": "Present",
+      "summary": "Selling merchandise to customers as well as using the cash register.",
+      "highlights": [
+        "Part-Time Salesman, 2021-Present",
+        "Part-Time Conceirge, 2020-2021"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "type": "award",
+      "title": "Deans List",
+      "date": "December 2019",
+      "awarder": "University of California Irvine School of Physical Science",
+      "summary": ""
+    },
+    {
+      "type": "award",
+      "title": "Deans List",
+      "date": "March 2020",
+      "awarder": "University of California Irvine School of Physical Science",
+      "summary": ""
+    },
+    {
+      "type": "award",
+      "title": "Deans List",
+      "date": "December 2020",
+      "awarder": "University of Hawaii Manoa",
+      "summary": ""
+    },
+    {
+      "type": "award",
+      "title": "Deans List",
+      "date": "June 2021",
+      "awarder": "University of Hawaii Manoa",
+      "summary": ""
+    },
+    {
+      "type": "award",
+      "title": "Deans List",
+      "date": "December 2021",
+      "awarder": "University of Hawaii Manoa",
+      "summary": ""
+    }
+  ],
+  "references": [
+    {
+      "name": "Available upon request",
+      "reference": ""
+    }
+  ]
+}
