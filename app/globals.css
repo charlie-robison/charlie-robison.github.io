@@ -288,6 +288,12 @@ h1 {
   font-size: 0.95rem;
 }
 
+.lead a,
+.timeline-card h4 a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
 /* ═══════════════════════════════════════════
    BUTTONS
    ═══════════════════════════════════════════ */
@@ -615,6 +621,7 @@ h1 {
   padding: 1.25rem;
   display: grid;
   gap: 0.75rem;
+  align-content: start;
 }
 
 .project-body h3 {
@@ -629,6 +636,17 @@ h1 {
   color: var(--accent-cyan);
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  font-weight: 600;
+}
+
+.project-award {
+  width: fit-content;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  border-radius: 999px;
+  background: rgba(251, 191, 36, 0.1);
+  color: #fcd34d !important;
+  font-size: 0.76rem !important;
   font-weight: 600;
 }
 

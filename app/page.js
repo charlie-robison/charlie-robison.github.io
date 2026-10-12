@@ -12,6 +12,16 @@ const navLinks = [
 
 const featuredProjects = [
   {
+    name: "Phylax",
+    award: "Winner · Speedrun SpeedHacks Hackathon",
+    summary:
+      "Built at the Speedrun SpeedHacks Hackathon, where our team won. Phylax uses 3D construction scans to show building owners what equipment is installed and where to find it. It connects equipment to inspection and testing requirements and supporting reports, then flags missing evidence before an inspection so teams can resolve gaps early.",
+    period: "Oct 2026 - Oct 2026",
+    videoType: "local",
+    videoSrc: "/videos/phylax-demo.mp4",
+    tags: ["AI for Construction", "AI Agents", "Object Detection", "3D Scans"],
+  },
+  {
     name: "Arceus (Robot Training Generation) - YC x Google DeepMind Hackathon",
     summary:
       "Developed a multi-agent vision simulation using Gemini VLMs where attacker and defender agents competed in a 3D environment using live camera streams. The models learned from each round by storing summarized experiences in context, creating synthetic data for reinforcement learning training in MuJoCo robotics environments.",
@@ -82,7 +92,7 @@ const featuredProjects = [
     image: "/images/social-plai-cover.png",
     videoType: "local",
     videoSrc: "/videos/Social-Plai-Demo.mp4",
-    url: "https://www.linkedin.com/in/charlierobison/",
+    url: "https://www.linkedin.com/in/charlie-robison/",
     tags: ["Healthcare Tech", "Web Applications", "Team Engineering", "Games"],
   },
 ];
@@ -91,7 +101,7 @@ const skillGroups = [
   {
     title: "Top Skills (LinkedIn)",
     icon: "star",
-    items: ["Synthetic Data Generation", "Vector Databases", "Web Scraping"],
+    items: ["Software Development", "Artificial Intelligence (AI)", "Machine Learning", "Data Engineering", "SQL"],
   },
   {
     title: "Frontend + Product",
@@ -112,13 +122,22 @@ const skillGroups = [
 
 const journey = [
   {
-    period: "Sep 2025 - Present",
+    period: "Oct 2025 - Present",
+    title: "Co-Founder | CTO",
+    company: "SESA",
+    url: "https://www.usesesa.com/",
+    detail:
+      "Build production-grade AI, data, and backend systems for infrastructure requirements management. SESA reads contracts and specifications, creates a live requirements register, links each obligation to its source and supporting project evidence, and flags gaps before they become problems.",
+    skills: ["AI for Construction", "Artificial Intelligence (AI)", "Data Engineering", "Software Development"],
+    active: true,
+  },
+  {
+    period: "Sep 2025 - Sep 2026",
     title: "CTO | Co-Founder",
     company: "Swivel Churn",
     detail:
-      "For subscription companies that implement retention practices to reduce churn, Swivel creates synthetic customer segments replicating their target audience, exactly why different customer segments might churn and identify the best strategies to retain.",
+      "Built synthetic customer segments to help subscription companies understand churn drivers and prioritize retention strategies.",
     skills: ["Machine Learning", "Artificial Intelligence (AI)", "Software Development", "Technical Leadership", "Data Science"],
-    active: true,
   },
   {
     period: "Apr 2024 - Dec 2025",
@@ -163,7 +182,7 @@ const journey = [
 ];
 
 const metrics = [
-  { label: "Current Role", value: "CTO & Co-Founder" },
+  { label: "Current Role", value: "Co-Founder & CTO at SESA" },
   { label: "Production Focus", value: "AI, ML & Data — Full Stack Versatility" },
 ];
 
@@ -197,7 +216,7 @@ export default function Home() {
       <section id="top" className="hero section-wrap">
         <div className="hero-copy">
           <ScrollReveal>
-            <p className="eyebrow">CTO | Co-Founder @ Swivel</p>
+            <p className="eyebrow">Co-Founder | CTO @ SESA</p>
           </ScrollReveal>
 
           <ScrollReveal delay={200}>
@@ -208,14 +227,14 @@ export default function Home() {
 
           <ScrollReveal delay={300}>
             <p className="hero-subtitle">
-              Building production-grade AI, data, and backend systems for real-world outcomes.
+              Building production-grade AI, data, and backend systems for infrastructure.
             </p>
           </ScrollReveal>
 
           <ScrollReveal delay={400}>
             <p className="lead">
-              CTO and co-founder at Swivel, where I build production-grade AI, data, and backend systems that turn real customer data into actionable decisions.
-              My focus is on shipping scalable systems that work in messy, real-world environments.
+              I co-founded <a href="https://www.usesesa.com/" target="_blank" rel="noreferrer">SESA</a> to help construction teams manage thousands of requirements across contracts and specifications.
+              We turn those documents into a live requirements register, connect obligations to project evidence, and flag gaps before they become problems.
             </p>
           </ScrollReveal>
 
@@ -267,7 +286,7 @@ export default function Home() {
               </p>
               <a href="mailto:charlierobison480@gmail.com">charlierobison480@gmail.com</a>
               <a
-                href="https://www.linkedin.com/in/charlierobison/"
+                href="https://www.linkedin.com/in/charlie-robison/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -287,7 +306,7 @@ export default function Home() {
               <span className="label-line" />
               Featured Work
             </div>
-            <h2>YC hackathon builds, research tooling, and production-oriented AI systems.</h2>
+            <h2>Hackathon builds, research tooling, and production-oriented AI systems.</h2>
           </div>
         </ScrollReveal>
 
@@ -298,17 +317,20 @@ export default function Home() {
                 <ProjectMedia project={project} />
                 <div className="project-body">
                   <h3>{project.name}</h3>
-                  <p className="project-period">{project.period}</p>
+                  {project.award && <p className="project-award">🏆 {project.award}</p>}
+                  {project.period && <p className="project-period">{project.period}</p>}
                   <p>{project.summary}</p>
                   <ul>
                     {project.tags.map((tag) => (
                       <li key={tag}>{tag}</li>
                     ))}
                   </ul>
-                  <a href={project.url} target="_blank" rel="noreferrer">
-                    Explore Project
-                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                  </a>
+                  {project.url && (
+                    <a href={project.url} target="_blank" rel="noreferrer">
+                      Explore Project
+                      <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                    </a>
+                  )}
                 </div>
               </GlowCard>
             </ScrollReveal>
@@ -337,7 +359,7 @@ export default function Home() {
                   {item.active && <span className="active-badge">Current</span>}
                 </div>
                 <h3>{item.title}</h3>
-                <h4>{item.company}</h4>
+                <h4>{item.url ? <a href={item.url} target="_blank" rel="noreferrer">{item.company}</a> : item.company}</h4>
                 <p>{item.detail}</p>
                 {item.skills.length > 0 && (
                   <div className="timeline-skills">
